@@ -1,0 +1,610 @@
+#dcimContainer
+{
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.4);
+  padding: 0 20px;
+  background-color: #004266;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#dcim
+{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 690px;
+  padding: 0px 10px;
+  color:white;
+  /* background-color: gray; */
+}
+#dcimIntro
+{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#start,
+#graph
+{
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+#start > p
+{
+  padding: 0px 50px;
+}
+#graph > a > img
+{
+  width: 100%;
+}
+#subMenu
+{
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  display: block;
+  text-align: center;
+  transition: transform 0.2s;
+  bottom: 50px;
+  /* translate to -375%% after click */
+  transform: translateY(0%);
+  /* transition: transform 0.4s; */
+  /* transition-timing-function:  */
+  transition-timing-function: cubic-bezier(.5,.7,.8,1);
+  z-index: 10;
+}
+#subMenu > h1
+{
+  display: block;
+}
+#subMenu > .dot-box
+{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(72,91,109);
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50px;
+  border:1px solid black;
+  transition: background-color 0.22s;
+  overflow: hidden;
+  z-index: 0px;
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+}
+#subMenu > .dot-box:nth-of-type(1)
+{
+  padding: 35px;
+  margin-right: 3px;
+}
+#subMenu > .dot-box:nth-of-type(2)
+{
+  padding-top: 25px;
+}
+#subMenu > .dot-box:nth-of-type(3)
+{
+  padding-top: 18px;
+  margin: 0px 3px;
+}
+#subMenu > .dot-box:nth-of-type(4)
+{
+  padding-top: 18px;
+}
+#subMenu > .dot-box:nth-of-type(5)
+{
+  margin-left:3px;
+}
+
+#subMenu > .dot-box:hover
+{
+  cursor: pointer;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  transition: background-color .4s;
+}
+@keyframes borderBlinker {
+50% { border-color: white; }
+}
+
+#subMenu > .dot-box.activeSub
+{
+  /* background-color: white; */
+  /* border-color: white; */
+  animation: borderBlinker 2.33s linear infinite;
+}
+@keyframes blinkers {
+50% { color: white; }
+}
+#subMenu.slideUpSub
+{
+  transform: translateY(-375%);
+  transition-timing-function: cubic-bezier(.5,.7,.8,1);
+  /* transition: transform 0.5s; */
+}
+#dcimBrazil,
+#dcimJon,
+#dcimTrumpJr,
+#dcimPresident
+{
+  display: block;
+  padding-top: 140px;
+}
+#dcimBrazil > p:nth-of-type(1)
+{
+  padding: 0px 145px 10px 145px;
+  text-align: center;
+}
+#dcimBrazil > span
+{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+#dcimBrazil > span > img
+{
+  width: 100%;
+}
+#dcimBrazil > p:nth-of-type(2)
+{
+  font-size: 12px;
+  text-align: center;
+  color: black;
+}
+
+#dcimJon > p:nth-of-type(1)
+{
+  padding: 0px 145px 10px 145px;
+  text-align: center;
+}
+#dcimJon > span
+{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+#dcimJon > span > img
+{
+  width: 100%;
+}
+#dcimJon > p:nth-of-type(2)
+{
+  font-size: 12px;
+  text-align: center;
+  padding: 0px 30px;
+  color: black;
+}
+
+#dcimTrumpJr > p:nth-of-type(1)
+{
+  padding: 0px 45px 10px 45px;
+  text-align: left;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+#tweet
+{
+  width: 30%;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+#tweets
+{
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
+}
+#tweets > p:nth-of-type(1)
+{
+  padding: 0px 45px;
+  text-align: left;
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+#tweet2
+{
+  width: 70%;
+  margin: auto;
+  display: block;
+  vertical-align: middle;
+}
+#graphs
+{
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  vertical-align: middle;
+  /*background-color: orange;*/
+}
+#graphs > .techCompanies,
+#graphs > .government
+{
+  display: block;
+  width: 70%;
+}
+#graphs > .techCompanies > a > img,
+#graphs > .government > a > img
+{
+  width: 95%;
+}
+#dcimBrazil,
+#dcimJon,
+#dcimTrumpJr,
+#dcimPresident
+{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+@media all and (max-width:875px)
+{
+  #dcim
+  {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 690px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    color:white;
+    /* background-color: gray; */
+  }
+  #tweets
+  {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+  }
+  #tweets > p:nth-of-type(1)
+  {
+    padding: 0px 45px;
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #tweet2
+  {
+    width: 50%;
+    margin: auto;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  #graphs
+  {
+    display: block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 5%;
+    /*background-color: orange;*/
+  }
+  #graphs > .techCompanies,
+  #graphs > .government
+  {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+@media all and (max-width:700px)
+{
+  #dcim
+  {
+    display: block;
+    position: relative;
+    margin-bottom: 0px;
+    height: 860px;
+    color:white;
+    /* background-color: gray; */
+  }
+  #start,
+  #graph
+  {
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+  }
+  #start > p
+  {
+    padding: 0px 50px;
+  }
+  #graph > a > img
+  {
+    width: 100%;
+  }
+  #subMenu
+  {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    display: block;
+    text-align: center;
+    transition: transform 0.2s;
+    bottom: 50px;
+    /* translate to -375%% after click */
+    transform: translateY(0%);
+    /* transition: transform 0.4s; */
+    /* transition-timing-function:  */
+    transition-timing-function: cubic-bezier(.5,.7,.8,1);
+    z-index: 10;
+  }
+  #subMenu.slideUpSub
+  {
+    transform: translateY(-500%);
+    transition-timing-function: cubic-bezier(.5,.7,.8,1);
+    /* transition: transform 0.5s; */
+  }
+}
+
+
+
+
+
+
+
+
+/* Mobile Switch! */
+@media all and (max-width:650px)
+{
+  #dcim
+  {
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+    height: 860px;
+    color:white;
+    /* background-color: gray; */
+  }
+  #dcimBrazil > p:nth-of-type(1),
+  #dcimJon > p:nth-of-type(1)
+  {
+    padding: 0px 25px 10px 45px;
+    text-align: left;
+  }
+  #dcimBrazil > span,
+  #dcimJon > span
+  {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  #dcimBrazil > span > img
+  {
+    width: 100%;
+  }
+  #dcimTrumpJr > p:nth-of-type(1)
+  {
+    padding: 0px 5px 5px 45px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+  }
+  #tweet
+  {
+    width: 60%;
+    margin: auto;
+    display: block;
+    vertical-align: middle;
+    border-radius: 15px;
+  }
+
+  #tweets
+  {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+  }
+  #tweets > p:nth-of-type(1)
+  {
+    padding: 0px 45px 0 5px;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #tweet2
+  {
+    display:none;
+  }
+  #graphs
+  {
+    display: block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 5%;
+    /*background-color: orange;*/
+  }
+  #graphs > .techCompanies,
+  #graphs > .government
+  {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  #subMenu
+  {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    display: block;
+    text-align: center;
+    transition: transform 0.2s;
+    bottom: 50px;
+    /* translate to -375%% after click */
+    transform: translateY(0%);
+    /* transition: transform 0.4s; */
+    /* transition-timing-function:  */
+    transition-timing-function: cubic-bezier(.5,.7,.8,1);
+    z-index: 10;
+  }
+  #subMenu > .dot-box
+  {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border:1px solid black;
+    transition: background-color 0.22s;
+    overflow: hidden;
+    z-index: 0px;
+    padding: 10px;
+    color: rgb(72,91,109);
+    text-decoration: none;
+  }
+  #subMenu > .dot-box:nth-of-type(1)
+  {
+    padding: 10px;
+    margin-right: 3px;
+  }
+  #subMenu.slideUpSub
+  {
+    transform: translateY(-890%);
+    transition-timing-function: cubic-bezier(.5,.7,.8,1);
+    /* transition: transform 0.5s; */
+  }
+  #subMenu > .dot-box:hover
+  {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(72,91,109);
+    color: rgb(72,91,109);
+  }
+  #subMenu > h4
+  {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+@media all and (max-width:650px)
+{
+  #dcim
+  {
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+    height: 900px;
+    color:white;
+    /* background-color: gray; */
+  }
+  #tweets > p:nth-of-type(1)
+  {
+    padding: 0px 5px 0 45px;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #tweet
+  {
+    width: 80%;
+    margin: auto;
+    display: block;
+    vertical-align: middle;
+    border-radius: 15px;
+  }
+  #subMenu.slideUpSub
+  {
+    transform: translateY(-940%);
+    transition-timing-function: cubic-bezier(.5,.7,.8,1);
+    /* transition: transform 0.5s; */
+  }
+  #dcimJon > p:nth-of-type(2)
+  {
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 30px;
+    color: black;
+    overflow-x:hidden;
+  }
+}
+
+
+
+
+
+
+
+@media all and (max-width:425px)
+{
+  #dcim
+  {
+    display: block;
+    position: relative;
+    margin-bottom: 180px;
+    height: 900px;
+    color:white;
+  }
+  #graphs > .techCompanies,
+  #graphs > .government
+  {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+@media all and (max-width:350px)
+{
+  #subMenu > h4
+  {
+    font-size: 14px;
+  }
+  #subMenu.slideUpSub
+  {
+    transform: translateY(-980%);
+    transition-timing-function: cubic-bezier(.5,.7,.8,1);
+    /* transition: transform 0.5s; */
+  }
+  #dcimBrazil > p:nth-of-type(2)
+  {
+    font-size: 10px;
+    text-align: center;
+    color: black;
+  }
+  #dcimTrumpJr > p:nth-of-type(1)
+  {
+    padding: 0px 0px 0px 45px;
+    text-align: left;
+    font-size: 14px;
+  }
+}

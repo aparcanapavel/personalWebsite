@@ -1,0 +1,109 @@
+#projectContainer
+{
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.4);
+  padding: 0 20px;
+  background-color: #004266;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+#projectContainer h3
+{
+  color: rgba(255,255,255,1);
+  margin-bottom: 20px;
+}
+.projectIcon,
+.projectEssay
+{
+  vertical-align: top;
+  margin-left: 30px;
+}
+.projectIcon
+{
+  width: 65px;
+  overflow: hidden;
+  float: left;
+  margin-right: 15px;
+}
+.projectIcon a img
+{
+  width: 100%;
+}
+.projectEssay
+{
+  color: rgba(255,255,255,.9);
+  padding-right: 25px;
+  position: relative;
+  display: block;
+}
+.projectEssay .git
+{
+  margin-top: -15px;
+}
+.projectEssay .git a
+{
+  padding: 8px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.projectEssay .git a:hover
+{
+  cursor: pointer;
+}
+.carousel-caption
+{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+#projectSlideshow
+{
+  width: 60%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Switch! */
+@media all and (max-width:650px)
+{
+  .projectEssay
+  {
+    padding-right: 15px;
+  }
+  .carousel-caption h5
+  {
+    font-size: 15px;
+  }
+  #projectSlideshow
+  {
+    width: 100%;
+    margin: auto;
+  }
+  h3
+  {
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+@media all and (max-width: 380px)
+{
+  h3
+  {
+    font-size: 23px;
+  }
+}

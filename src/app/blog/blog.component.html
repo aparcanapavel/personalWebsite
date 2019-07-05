@@ -1,0 +1,17 @@
+<div id="blogContainer">
+  <div class="blogImage">
+    <img src="{{ blog.blogImage }}" alt="">
+  </div>
+  <h3>{{ blog.blogTitle }}</h3>
+  <p>{{ blog.blogDate }}</p>
+
+  <div class="blogEssay" *ngFor="let essay of blog.blogEssay">
+    <hr class="sectionBreak" *ngIf="essay.sectionBreak == 'true'">
+    <div class="paragraphImage" *ngIf="essay.paragraphImg != 'false'">
+      <img src="{{ essay.paragraphImg }}" alt="">
+    </div>
+    <p class="imageCap" *ngIf="essay.imageCaption != 'false'">{{essay.imageCaption}}</p>
+    <h5 class="sectionTitle" *ngIf="essay.sectionTitle != 'false'"><i>{{essay.sectionTitle}}</i></h5>
+    <p><span *ngIf="essay.firstLetter != 'false'">{{ essay.firstLetter }}</span>{{essay.blogParagraph}}</p>
+  </div>
+</div>

@@ -1,0 +1,412 @@
+@keyframes blinker {
+50% { color: white; }
+}
+
+#homeContainer
+{
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.4);
+  padding: 0 20px;
+  background-color: #004266;
+  /* margin-top: -20px; */
+  /* height: 100%; */
+  padding-bottom: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#aboutMe
+{
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#aboutMe > p
+{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.horizonalLine
+{
+  width: 90%;
+  background-color: white;
+}
+
+#interests
+{
+  padding-top: 10px;
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
+}
+#interests > h3
+{
+  color: white;
+}
+#hobbiesSelector
+{
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align:center;
+}
+#hobbiesSelector > a
+{
+  padding:5px 20px;
+  border-right: 1px solid white;
+  vertical-align: middle;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  transition: color 0.33s;
+  /* z-index: 2; */
+  font-size: 20px;
+}
+#hobbiesSelector > a:nth-of-type(3)
+{
+  border-right: 1px solid transparent;
+}
+#hobbiesSelector > a:hover
+{
+  color: #00A6FF;
+  cursor: pointer;
+  transition: color 0.4s;
+  text-decoration: none;
+}
+#hobbiesSelector > a.active
+{
+  color: #0085CC;
+  text-decoration: none;
+  animation: blinker 2.5s linear infinite;
+}
+#hiking,
+#photography,
+#cinematography
+{
+  padding: 15px;
+}
+#hiking
+{
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+#hikingImg,
+#hikeParagraph
+{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+#hikingImg
+{
+  width: 25%;
+  /* box-shadow: -0px 0px 30px -9px rgba(255,255,255,0.5); */
+  float: left;
+  margin-right: 20px;
+  min-width: 160px;
+  min-height: 250px;
+}
+#hikingImg img
+{
+  width: 100%;
+}
+#hikeParagraph
+{
+  width: 100%;
+  padding: 10px 30px;
+  padding-left: 5px;
+  color: white;
+}
+#photoPara,
+#photoshow
+{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+#photography
+{
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+#photoshow
+{
+  width: 50%;
+  float: right;
+  margin-left: 10px;
+  min-height: 240px;
+}
+#photoPara
+{
+  width: 100%;
+  color: white;
+  padding: 10px 30px;
+  padding-left: 0px;
+}
+#cinematography
+{
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+#cinemaPara
+{
+  display: block;
+  position: relative;
+}
+#cinemaPara
+{
+  color: white;
+  width: 100%;
+  clear: both;
+  padding-right: 20px;
+}
+#cinemaPara iframe
+{
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+}
+#hiking,
+#photography,
+#cinematography
+{
+  max-height: 390px;
+  overflow-y: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile switch */
+@media all and (max-width:650px)
+{
+  #aboutMe > p
+  {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  #hiking,
+  #photography,
+  #cinematography
+  {
+    max-height: 490px;
+    overflow-y: visible;
+  }
+}
+
+
+
+
+@media all and (max-width:500px)
+{
+  #aboutMe > p
+  {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  #hiking,
+  #photography,
+  #cinematography
+  {
+    padding: 15px;
+  }
+  #hiking
+  {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+  #hikingImg,
+  #hikeParagraph
+  {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+  }
+  #hikingImg
+  {
+    width: 25%;
+    float: left;
+    margin-right: 20px;
+    min-width: 160px;
+    min-height: 70px;
+  }
+  #hikingImg img
+  {
+    width: 100%;
+  }
+  #hikeParagraph
+  {
+    width: 100%;
+    padding: 10px 30px;
+    padding-left: 5px;
+    color: white;
+  }
+  #photoPara,
+  #photoshow
+  {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+  }
+  #photoshow
+  {
+    width: 90%;
+    float: none;
+    margin-left: 0px;
+    margin: auto;
+  }
+  #photoPara
+  {
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+    padding-left: 0px;
+  }
+  #cinematography
+  {
+    padding-top: 40px;
+  }
+  #cinemaPara
+  {
+    display: block;
+    position: relative;
+    color: white;
+    width: 100%;
+    clear: both;
+    padding-right: 10px;
+  }
+  #cinemaPara iframe
+  {
+    display: block;
+    width: 70%;
+    float: none;
+    margin-right: 0px;
+    margin: auto;
+    height: 158px;
+  }
+  #hiking,
+  #photography,
+  #cinematography
+  {
+    max-height: 590px;
+    overflow-y: visible;
+  }
+}
+
+
+
+
+
+
+
+@media all and (max-width:400px)
+{
+  #hiking
+  {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+  #hikingImg,
+  #hikeParagraph
+  {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+  }
+  #hikingImg
+  {
+    width: 180px;
+    /* box-shadow: -0px 0px 30px -9px rgba(255,255,255,0.5); */
+    float: none;
+    margin-right: 0px;
+    margin: auto;
+  }
+  #hikingImg img
+  {
+    width: 100%;
+  }
+  #hikeParagraph
+  {
+    width: 100%;
+    padding: 10px 0px 10px 30px;
+    padding-left: 5px;
+    color: white;
+    min-height: 620px;
+  }
+  #photoPara,
+  #photoshow
+  {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+  }
+  #photoshow
+  {
+    width: 90%;
+    float: none;
+    margin-left: 0px;
+    margin: auto;
+  }
+  #photoPara
+  {
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+    padding-left: 0px;
+  }
+  #cinematography
+  {
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+  #cinemaPara
+  {
+    display: block;
+    position: relative;
+  }
+  #cinemaPara
+  {
+    color: white;
+    width: 100%;
+    clear: both;
+    padding-right: 0px;
+  }
+  #cinemaPara iframe
+  {
+    display: block;
+    width: 70%;
+    float: none;
+    margin-right: 0px;
+    margin: auto;
+    height: 150px;
+  }
+  #hiking,
+  #photography,
+  #cinematography
+  {
+    max-height: 690px;
+    overflow-y: visible;
+  }
+}
+
+
+
+
+
+
+
+@media all and (max-width:380px)
+{
+  h3
+  {
+    font-size: 23px;
+  }
+}

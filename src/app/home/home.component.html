@@ -1,0 +1,45 @@
+<div id="homeContainer">
+  <div id="aboutMe">
+      <h3>About Me</h3>
+      <p>{{ aboutMe.aboutMe }}</p>
+  </div>
+
+  <hr class="horizonalLine">
+
+  <div id="interests" [ngSwitch]="myInterests">
+    <h3>Hobbies</h3>
+    <div id="hobbiesSelector">
+      <a id="hikeIcon" (click)="setHobby('hiking', $event)" class="fas fa-hiking" title="Hiking" tooltip="Hiking" placement="left"></a>
+      <a id="photoIcon" (click)="setHobby('photography', $event)" class="fas fa-camera" title="Photography" tooltip="Photography" placement="top"></a>
+      <a id="videoIcon" (click)="setHobby('cinematography', $event)" class="fas fa-video" title="Cinematography" tooltip="Cinematography" placement="right"></a>
+    </div>
+
+    <div id="hiking" *ngSwitchCase="'hiking'" [@hobbySwitch]>
+      <!-- <span id="hikingImg">
+        <img src="{{ hikingData.hikeImg }}">
+      </span> -->
+      <div id="hikeParagraph">
+        <p><span id="hikingImg">
+          <img src="{{ hikingData.hikeImg }}">
+        </span> {{ hikingData.hikeParagraph }}</p>
+      </div>
+    </div>
+
+    <div id="photography" *ngSwitchCase="'photography'" [@hobbySwitch]>
+      <div id="photoPara">
+        <p> <carousel id="photoshow">
+          <slide *ngFor="let photo of photoData.photoImgs">
+            <img src="{{photo.photoImage}}" alt="first slide" style="display: block; width: 100%;">
+          </slide>
+        </carousel> {{photoData.photoParagraph}}</p>
+      </div>
+    </div>
+
+    <div id="cinematography" *ngSwitchCase="'cinematography'" [@hobbySwitch]>
+      <div id="cinemaPara">
+        <!-- width="560" height="315" -->
+        <p>  <iframe height="215" src="https://www.youtube-nocookie.com/embed/BEqlTJfaDEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {{ cinemaData.cinemaParagraph }} <a href="{{cinemaData.channelURL}}" target="_blank">here</a></p>
+      </div>
+    </div>
+  </div>
+</div>

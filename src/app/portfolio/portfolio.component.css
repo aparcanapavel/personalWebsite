@@ -1,0 +1,429 @@
+#portfolioContainer
+{
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.4);
+  padding: 0 20px;
+  background-color: #004266;
+  /* margin-top: -20px; */
+  /* height: 100%; */
+  padding-bottom: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.horizonalLine
+{
+  width: 90%;
+  background-color: white;
+}
+.section
+{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: white;
+  display: block;
+  position: relative;
+}
+#projects
+{
+  border-top: 1px solid white;
+  /* border-left: 1px solid white; */
+  /* border-right: 1px solid white; */
+  margin-left: 20px;
+  position: relative;
+  display: block;
+}
+#projects:hover
+{
+  cursor: pointer;
+  background-image: linear-gradient(to right,#004266 1%,#002940 90% ,#004266);
+  transition: background-image 0.4s;
+}
+.image,
+.projectData,
+#dateArrow
+{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  position: relative;
+}
+.image
+{
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  padding-left: 5px;
+}
+.image > img
+{
+  width: 100%;
+  /* height: 100%; */
+  margin: auto;
+}
+.projectData
+{
+  padding-left: 10px;
+  width: 70%;
+}
+.projectData p
+{
+  color: rgba(255, 255, 255, 0.8);
+}
+#dateArrow
+{
+  float: right;
+  vertical-align: top;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+#dateArrow a
+{
+  color: rgba(255,255,255,0.2);
+  transition: color 0.3s;
+}
+#projects:hover #dateArrow a
+{
+  color: rgba(255,255,255,1);
+}
+#projectLine
+{
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+/* Hardcoded things */
+@keyframes blinker {
+50% { color: white; }
+}
+
+#xp
+{
+  position: relative;
+  display: block;
+}
+#xpSwitch
+{
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+#xpSwitch a
+{
+  font-size: 18px;
+  color: rgba(255,255,255,0.9);
+  padding: 10px;
+}
+#xpSwitch a:nth-of-type(1)
+{
+  border-right: 1px solid white;
+}
+#xpSwitch a:hover
+{
+  color: #00A6FF;
+  transition: color 0.4s;
+  cursor: pointer;
+}
+#xpSwitch > a.active
+{
+  color: #00A6FF;
+  text-decoration: none;
+  animation: blinker 2.5s linear infinite;
+}
+#skills-certs
+{
+  display: block;
+  position: relative;
+  /* background-color: red; */
+  width: 100%;
+  font-family: sans-serif;
+  vertical-align: top;
+  color: white;
+}
+#skills-certs > h3,
+#volunteer > h3
+{
+  margin-bottom: 0px;
+}
+#skills-certs > .skillData
+{
+  width: 50%;
+  margin-left: -4px;
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  /* font-size: 16px; */
+  color: rgba(255, 255, 255, 0.9);
+}
+#skills-certs > .skillData:nth-of-type(1) > ul > li
+{
+  padding-bottom: 10px;
+}
+#skills-certs > .skillData:nth-of-type(2)
+{
+  text-align: center;
+}
+#skills-certs > .skillData:nth-of-type(2) > span
+{
+  font-size: 70px;
+  margin-right: 20%;
+}
+#volunteer
+{
+  color: white;
+  display: block;
+  width: 100%;
+}
+#vol
+{
+  vertical-align: middle;
+  width: 330px;
+  /* margin-left: 80px;
+  margin-right: 20px; */
+  display: inline-block;
+  position: relative;
+  min-height: 260px;
+}
+#volunteer .volunteering
+{
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  position: relative;
+}
+#volunteer .volunteering ul
+{
+  /* padding-bottom: 100px; */
+  padding-top: 10px;
+}
+#volunteer .volunteering ul li
+{
+  padding-right: 50px;
+  color: rgba(255, 255, 255, 0.9);
+}
+/* Professional Experience */
+#pro-xp
+{
+  display: block;
+  position: relative;
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+}
+#rutgers > .location,
+#harrison > .location
+{
+  font-size: 18px;
+  font-weight: 900;
+}
+#rutgers > .position,
+#harrison > .position
+{
+  font-size: 18px;
+  list-style-type: none;
+  color: white;
+}
+#rutgers > .description,
+#harrison > .description
+{
+  list-style-type: circle;
+  margin-left: 17px;
+  color: rgba(255,255,255,0.7);
+}
+#rutgers > .description:nth-of-type(5),
+#rutgers > .description:nth-of-type(9),
+#harrison > .description:nth-of-type(6),
+#harrison > .description:nth-of-type(10),
+#harrison > .description:nth-of-type(13)
+{
+  padding-bottom: 10px;
+}
+#pro-xp > .proPic
+{
+  width: 90%;
+  margin: auto;
+}
+#pro-xp > .proPic > img
+{
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width:800px)
+{
+  #skills-certs > .skillData
+  {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 15px;
+    display: block;
+    vertical-align: middle;
+    /* font-size: 16px; */
+  }
+  #skills-certs > .skillData:nth-of-type(1) > ul > li
+  {
+    padding-bottom: 10px;
+  }
+  #skills-certs > .skillData:nth-of-type(2)
+  {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+  }
+  #skills-certs > .skillData:nth-of-type(2) > span
+  {
+    font-size: 70px;
+    margin:3% 5%;
+  }
+  #volunteer
+  {
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  #vol
+  {
+    vertical-align: middle;
+    width: 360px;
+    margin: auto;
+    display: block;
+    position: relative;
+    min-height: 260px;
+  }
+  #volunteer .volunteering
+  {
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+  }
+  #volunteer .volunteering ul li
+  {
+    padding-right: 50px;
+    padding-top: 5px;
+  }
+}
+
+
+
+
+
+
+
+/* Mobile Switch! */
+@media all and (max-width:650px)
+{
+  .image
+  {
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    padding-left: 5px;
+  }
+  .projectData
+  {
+    padding-left: 10px;
+    width: 50%;
+  }
+  #dateArrow
+  {
+    float: none;
+    position: absolute;
+    vertical-align: top;
+    text-align: right;
+    right: 0px;
+    padding-right: 10px;
+    margin-top: 0px;
+    padding-top: 5px;
+    height: 100%;
+  }
+
+  #dateArrow a
+  {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    padding-bottom: 15px;
+  }
+  #skills-certs > .skillData:nth-of-type(2)
+  {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  #skills-certs > .skillData:nth-of-type(2) > span
+  {
+    font-size: 70px;
+    margin:12% 5%;
+  }
+  #vol
+  {
+    vertical-align: middle;
+    width: 60%;
+    margin: auto;
+    display: block;
+    position: relative;
+    min-height: 260px;
+  }
+}
+
+
+
+
+
+
+
+
+@media all and (max-width:550px)
+{
+  #vol
+  {
+    vertical-align: middle;
+    width: 90%;
+    margin: auto;
+    display: block;
+    position: relative;
+    min-height: 330px;
+  }
+}
+
+
+
+
+
+
+
+
+@media all and (max-width:380px)
+{
+  h3
+  {
+    font-size: 23px;
+  }
+  .projectData h5
+  {
+    font-size: 17px;
+    padding-right: 8px; 
+  }
+  .projectData p
+  {
+    font-size: 15px;
+  }
+  #dateArrow p
+  {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+}

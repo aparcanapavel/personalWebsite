@@ -1,0 +1,123 @@
+<div id="portfolioContainer">
+  <div class="section">
+    <h3>Projects</h3>
+
+    <div id="projects" *ngFor="let project of projects | reverse" routerLink="/portfolio/{{project.projID}}">
+      <div class="image">
+        <img src="{{ project.projIcon }}" alt="">
+      </div>
+      <div class="projectData">
+          <h5>{{ project.projTitle }}</h5>
+          <p> {{ project.projSummary }}</p>
+      </div>
+      <div id="dateArrow">
+        <p> {{ project.projDate }}</p>
+        <a class="fas fa-chevron-right" ></a>
+      </div>
+    </div>
+    <hr id="projectLine">
+  </div>
+
+  <div id="XP" [ngSwitch]="xp">
+    <div id="xpSwitch">
+      <a id="skillsIcon" class="fas fa-list-ul" (click)="setXP('skills', $event)" tooltip="Skills and Certificates" placement="left"></a>
+      <a id="volIcon" class="fas fa-hands-helping" (click)="setXP('volunteer', $event)" tooltip="Volunteer Work" placement="right"></a>
+    </div>
+
+    <div id="skills-certs" *ngSwitchCase="'skills'" [@xpSwitch]>
+      <h3>Skills and Certificates</h3>
+      <div class="skillData">
+        <ul>
+          <li>HTML, CSS and JavaScript for web design</li>
+          <li>jQuery and Angular 7</li>
+          <li>Java Programing Language</li>
+          <li>Certified in the Protection of Minors Program</li>
+          <li>Certified Lifeguard Instructor (January 2018)</li>
+          <li>Certified Pool Operator (August 2017)</li>
+          <li>Certified Lifeguard and CPR (June 2012 - Present)</li>
+        </ul>
+      </div>
+      <div class="skillData">
+        <span class="fab fa-html5"></span>
+        <span class="fab fa-css3-alt"></span>
+        <span class="fab fa-js-square"></span>
+        <span class="fab fa-angular"></span>
+      </div>
+    </div>
+
+    <div class="volunteer" id="volunteer" *ngSwitchCase="'volunteer'" [@xpSwitch]>
+      <h3>Volunteer Work</h3>
+        <div class="volunteering">
+          <ul>
+            <li>Raised $1,500 for the Juvinile Diabetes Research Foundation October 2015 - Present</li>
+            <li>Helped Raise $912,143.47 for Rutgers Dance Marathon Spring 2016 and 2018</li>
+            <li>5 hours of Community Service per college semester</li>
+          </ul>
+
+        </div>
+        <carousel id="vol">
+          <slide class="slidePic">
+            <img src="assets/portfolio/experience/jrdf2015.png" alt="first slide" style="display: block; width: 100%;">
+          </slide>
+          <slide class="slidePic">
+            <img src="assets/portfolio/experience/ftk2016.png" alt="second slide" style="display: block; width: 100%;">
+          </slide>
+          <slide class="slidePic">
+            <img src="assets/portfolio/experience/ftk2018.png" alt="third slide" style="display: block; width: 100%;">
+          </slide>
+        </carousel>
+
+    </div>
+
+  </div>
+
+  <hr class="horizonalLine">
+
+  <div id="pro-xp">
+    <h3>Work Experience</h3>
+    <div class="pro-xp-data">
+      <ul id="rutgers">
+          <li class="location">Rutgers Recreation, New Brunswick, NJ 2014 - Present</li>
+          <li class="position"><i>Aquatic Supervisor 2017-Present</i></li>
+          <li class="description">Manage the Lifeguard aquatic staff</li>
+          <li class="description">Facilitate monthly in-service training sessions</li>
+          <li class="description">Troubleshoot unforeseen circumstances</li>
+
+          <li class="position"><i>Lifeguard 2014 - 2016</i></li>
+          <li class="description">Enforced facility rules</li>
+          <li class="description">Surveilled the pool</li>
+          <li class="description">Monitored pool chemistry levels</li>
+
+          <li class="position"><i>Skills Utilized</i></li>
+          <li class="description">Public Speaking</li>
+          <li class="description">Problem Solving</li>
+          <li class="description">Time Management</li>
+      </ul>
+      <ul id="harrison">
+          <li class="location">Harrison Public Pool, Harrison, NJ Summers 2012 - 2018</li>
+          <li class="position"><i>Pool Manager July 2016 - 2018</i></li>
+          <li class="description">Manage aquatic facility and the 57 employees</li>
+          <li class="description">Record the daily earnings</li>
+          <li class="description">Solve customer related issues</li>
+          <li class="description">troubleshooting unforeseen circumstances</li>
+
+          <li class="position"><i>Head-Lifeguard Summer 2015</i></li>
+          <li class="description">Manage lifeguards</li>
+          <li class="description">Provide service for a summer session</li>
+          <li class="description">Monitored pool chemistry readings</li>
+
+          <li class="position"><i>Lifeguard 2012 - 2014</i></li>
+          <li class="description">Enforced facility rules</li>
+          <li class="description">Surveilled the pool for summer sessions</li>
+
+          <li class="position"><i>Skills Utilized</i></li>
+          <li class="description">Public Speaking</li>
+          <li class="description">Problem Solving</li>
+      </ul>
+    </div>
+    <div class="proPic" style="max-width:500px">
+      <img class="pic" src="assets/portfolio/experience/lgBanner.png">
+      <p style="font-family: sans-serif; text-align: center; font-size: 12px">Picture retrieved from recreation.rutgers.edu</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<div id="dcimContainer">
+  <div id="dcim" [ngSwitch]="dcimSwitch">
+    <div id="dcimIntro" *ngSwitchCase="'dcimIntro'" [@DCIMSwitch]>
+      <h3 class="section-title" style="color:white;">The Rise of "Fake News"</h3>
+      <div id="start" >
+        <h4>When did it start?</h4>
+        <p>According to Columbia University Professor Andie Tucker, fake news is deeply rooted in American Journalism. in 1690, the first North American news paper got shut down after printing a fabricated story <a href="https://www.npr.org/2018/06/25/623231337/fake-news-an-origin-story" target="_blank">(Vendantam S., Cohen R., & Boyle T., 2018)</a></p>
+      </div>
+      <div id="graph">
+        <h4>Is it a threat to Democracy in the US?</h4>
+        <a href="https://www.statista.com/statistics/802357/perception-fake-news-threat-to-democracy-us/" target="_blank">
+          <img src="assets/portfolio/projects/fakeNews/democracyThreat.png">
+        </a>
+      </div>
+    </div>
+
+    <div id="subMenu">
+      <h4>The latest on fake news(November 2018)</h4>
+      <a class="dot-box" id="IntroDCIM" (click)="activateSwitch('dcimIntro', $event)" name="dcimIntro" title="Intro">
+        Intro
+      </a>
+      <a class="dot-box" id="BrazilDCIM" (click)="activateSwitch('dcimBrazil', $event)" name="dcimBrazil" title="Brazil's Elections">
+        Brazil's Elections
+      </a>
+      <a class="dot-box" id="JonDCIM" (click)="activateSwitch('dcimJon', $event)" name="dcimJon" title="Jon Favreau's Tweet">
+        Jon Favreau's Tweet
+      </a>
+      <a class="dot-box" id="TrumpJrDCIM" (click)="activateSwitch('dcimTrumpJr', $event)" name="dcimTrumpJr" title="Donald Trump Jr.'s Tweet">
+        Donald Trump Jr.'s Tweet
+      </a>
+      <a class="dot-box" id="PresidentDCIM" (click)="activateSwitch('dcimPresident', $event)" name="dcimPresident" title="President Donald Trump's Reaction">
+        President Donald Trump's Reaction
+      </a>
+    </div>
+
+    <div id="dcimBrazil" *ngSwitchCase="'dcimBrazil'" [@DCIMSwitch]>
+      <h4>Brazil's Elections</h4>
+      <p>From August 16 to October 7, the New York Times, the Federal University of Minas Gerais, the University of Sao Paulo and the fact-checking platform Agencia Lupa, collected and analyzed posts in 347 groups that are open to the public and focused on Brazilian politics. 50 political images were selected and examined that were widely shared out of the 100,000. Only 8% of the 50 most widely shared images were considered truthful <a href="https://www.nytimes.com/2018/10/17/opinion/brazil-election-fake-news-whatsapp.html" target="_blank">(The New York Times, 2018).</a></p>
+      <span><img src="assets/portfolio/projects/fakeNews/brazilVote.jpg"></span>
+      <p>Image retreived from https://www.nytimes.com/2018/10/17/opinion/brazil-election-fake-news-whatsapp.html</p>
+    </div>
+
+    <div id="dcimJon" *ngSwitchCase="'dcimJon'" [@DCIMSwitch]>
+      <h4>Jon Favreau's tweet</h4>
+      <p>On May 27, 2018, Jon Favreau, a former Obama speechwriter, tweeted an image of two detainees lying on mats on the ground in a holding cell from an Arizona Republic story in 2014. This image was then widely shared by many public figures stating how Trump's administration was treating the children that were being deported. He then deleted the tweet and stated how the image was from 2014 and how today, in 2018, the government is creating unaccompanied minors <a href="https://www.forbes.com/sites/kalevleetaru/2018/06/15/could-google-image-search-help-fight-fake-news-on-social-media/#6f4ad52c4537" target="_blank">(Forbes, 2018).</a></p>
+      <span><img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F663032224%2F960x0.jpg%3Ffit%3Dscale"></span>
+      <p>Image retrieved from https://www.forbes.com/sites/kalevleetaru/2018/06/15/could-google-image-search-help-fight-fake-news-on-social-media/#724d63574537</p>
+    </div>
+
+    <div id="dcimTrumpJr" *ngSwitchCase="'dcimTrumpJr'" [@DCIMSwitch]>
+      <h4>Donald Trump Jr's Tweet</h4>
+      <p>On September 16, 2018, Donald Trump Jr. tweeted a picture of Anderson Cooper, CNN's anchor, in what appears that Cooper is kneeling to make a flood from hurricane Florence seem worse than it was to make the President look bad. Cooper then went on live television to explain the details of the picture, which in fact was from 10 years ago, during hurricane Ike. While the waters seem to reach Cooper's waist, the water level reaches his crew member's knee, but that was because the crew member was on higher ground, while he was staying out of the way of rescue vehicles <a href="https://www.cnn.com/2018/09/18/politics/anderson-cooper-vs-donald-trump-jr-cnntv/index.html?utm_medium=social&utm_source=twCNN&utm_content=2018-09-18T10:08:10" target="_blank">(Vera A., 2018)</a>.</p>
+      <ngx-tweet tweetId="1041310008623943680" id="tweet"></ngx-tweet>
+    </div>
+
+    <div id="dcimPresident" *ngSwitchCase="'dcimPresident'" [@DCIMSwitch]>
+      <h4>Donald Trump's Statement</h4>
+      <div id="tweets">
+        <p>In a <a href="https://www.cnn.com/2018/10/25/politics/trump-blames-media-for-anger-after-attacks/index.html" target="_blank">tweet</a> from President Trump on October 25, 2018, he stated, "A very big part of the Anger we see today in our society is caused by the purposely false and inaccurate reporting of the Mainstream Media that I refer to as Fake News. It has gotten so bad and hateful that it is beyond description. Mainstream Media must clean up its act, FAST!" But how does the US population feel about tech companies restricting fake news online? (Statista, 2018)</p>
+        <ngx-tweet tweetId="1055418269270716418" id="tweet2"></ngx-tweet>
+      </div>
+      <div id="graphs">
+        <div class="techCompanies">
+          <a href="https://www.statista.com/statistics/829260/tech-company-intervention-fake-news/" target="_blank">
+            <img src="assets/portfolio/projects/fakeNews/techCompanies.png">
+          </a>
+        </div>
+        <div class="government">
+          <a href="https://www.statista.com/statistics/829242/government-intervention-fake-news/" target="_blank">
+            <img src="assets/portfolio/projects/fakeNews/govIntervention.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

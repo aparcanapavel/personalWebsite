@@ -1,0 +1,25 @@
+<div id="contactContainer">
+  <div id="myPicture">
+    <img src="{{ contactData.contactImg }}" alt="">
+  </div>
+  <div id="contactLinks">
+    <span>Email: <a href="mailto:{{ contactData.email }}">{{ contactData.email }}</a></span>
+    <span>Phone: <a href="tel:{{ contactData.phoneNumber }}">(862)902-3780</a></span>
+    <span>GitHub: <a href="{{contactData.github}}" target="_blank">aparcanapavel</a></span>
+    <span>LinkedIn <a href="{{contactData.linkedin}}" target="_blank">pavel-aparcana</a></span>
+    <span>Twitter: <a href="{{ contactData.twitter }}" target="_blank">PavelAparcana</a></span>
+    <span>YouTube: <a href="{{ contactData.YouTube }}" target="_blank">paction</a></span>
+  </div>
+
+  <hr class="horizontalLine">
+  <div id="blog">
+    <h3>Blog</h3>
+    <div class="blogPost" *ngFor="let blog of blogs|reverse">
+      <div class="blogImg">
+        <a routerLink="/contact/blog/{{blog.blogId}}"><img src="{{blog.blogImage}}" alt=""></a>
+        <p>{{blog.blogDate}}</p>
+      </div>
+      <a routerLink="/contact/blog/{{blog.blogId}}"><h5>{{ blog.blogTitle }}</h5></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div id="backgound"></div>
+<div id="container">
+  <!-- <div class="page-background"></div> -->
+  <div class="header-background"></div>
+  <div id="header">
+    <h2 id="name">Pavel A. Aparcana</h2>
+    <p>Aspiring Web Developer</p>
+    <!-- quick contact are the linked in, resume, contact me page. -->
+    <ul id="quickContact">
+      <li>
+        <a href="https://www.linkedin.com/in/pavel-aparcana" class="fab fa-linkedin" target="_blank" title="LinkedIn" ></a>
+      </li>
+      <li>
+        <a href="assets/resume.pdf" class="fas fa-file-alt" target="_blank" title="Resume"></a>
+      </li>
+      <li>
+        <a routerLink="/contact" class="fas fa-envelope-square" title="Contact Me"></a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div id="main-menu">
+    <input type="checkbox" id="nav" style="display: none;">
+    <label for="nav" class="material-icons" (click)="toggleMenu()">dehaze</label>
+
+     <div id="pages">
+        <a id="pg1" routerLink="/"><i class="fas fa-home"></i>Home</a>
+        <a id="pg2" routerLink="/portfolio"><i class="fas fa-laptop-code"></i>Portfolio</a>
+        <a id="pg3" routerLink="/contact"(click)="contactClick()"><i class="fas fa-address-book"></i>Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Banners fade in/out based on current page -->
+<div id="banners" [ngSwitch]="banners">
+  <div id="pageTitle"><h3>{{ pageTitle }}</h3></div>
+  <img src="assets/pageImg/CroppedHike.jpg" *ngSwitchCase="'homeBanner'" [@bannerSwitch]>
+  <img src="assets/pageImg/CroppedSunset.jpg" *ngSwitchCase="'portfolioBanner'" [@bannerSwitch]>
+  <img src="assets/pageImg/CroppedSnowRoad.jpg" *ngSwitchCase="'contactBanner'" [@bannerSwitch]>
+</div>
+
+<div id="backgroundTrans"></div>
+<div id="container2">
+  <div [@routeAnimations]="prepareRoute(outlet)" class="content">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+  <!-- <app-home></app-home> -->
+  <!-- <router-outlet></router-outlet> -->
+  <!-- <app-portfolio></app-portfolio> -->
+  <div id="footer-background"></div>
+  <div id="footer">
+    <h3>QUICK LINKS</h3>
+    <div id="quickLinks">
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="/portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a routerLink="/contact">Contact</a>
+      </li>
+      <li>
+        <a href="https://github.com/aparcanapavel" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/pavel-aparcana/" target="_blank">LinkedIn</a>
+      </li>
+      <li>
+        <a href="images/resume.pdf" target="_blank">Resume</a>
+      </li>
+    </div>
+    <div id="signature">
+      <p>Developed by Pavel Aparcana</p>
+    </div>
+  </div>
+</div>

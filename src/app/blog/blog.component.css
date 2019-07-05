@@ -1,0 +1,74 @@
+#blogContainer
+{
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.4);
+  padding: 0 20px;
+  background-color: #004266;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.blogImage
+{
+  width: 60%;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+.blogImage img
+{
+  width: 100%;
+}
+h3,
+#blogContainer p
+{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+h3
+{
+  margin-top: 10px;
+}
+#blogContainer p
+{
+  color: rgba(255, 255, 255, 0.6);
+}
+#blogContainer .blogEssay p
+{
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+}
+#blogContainer .blogEssay p span
+{
+  font-size: 30px;
+  color: white;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.paragraphImage
+{
+  width: 30%;
+  margin: auto;
+}
+.paragraphImage img
+{
+  width: 100%;
+}
+#blogContainer .blogEssay .imageCap
+{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);font-size: 11px;
+}
+.sectionBreak
+{
+  width: 20%;
+  background-color: white;
+}
+.sectionTitle
+{
+  color: rgba(255, 255, 255, 1);
+  padding-top: 10px;
+}

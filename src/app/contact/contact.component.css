@@ -1,0 +1,164 @@
+#contactContainer
+{
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.4);
+  padding: 0 20px;
+  background-color: #004266;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#myPicture
+{
+  width: 20%;
+  border-radius: 150px;
+  overflow: hidden;
+  border: 3px solid white;
+  margin: auto;
+}
+#myPicture img
+{
+  width: 100%;
+}
+#contactLinks
+{
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+#contactLinks span
+{
+  width: 50%;
+  display: inline-block;
+  color: white;
+}
+.horizontalLine
+{
+  width: 90%;
+  background-color: white;
+}
+#blog
+{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+#blog h3
+{
+  color: white;
+}
+.blogPost
+{
+  width: 33%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding: 5px 10px;
+}
+.blogImg
+{
+  z-index: 1;
+  /* height: 200px; */
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  transition: border 0.4s;
+}
+.blogImg:hover
+{
+  border: 1px solid white;
+}
+.blogImg img
+{
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  display: block;
+}
+.blogImg p
+{
+  z-index: 0;
+  background: linear-gradient( transparent 1%, black);
+  position: absolute;
+  width: 100%;
+  margin: 0px;
+  margin-top: -23px;
+  color:white;
+  text-align: right;
+  padding-right: 3px;
+}
+.blogPost a h5
+{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Switch! */
+@media all and (max-width:650px)
+{
+  #myPicture
+  {
+    min-width: 115px;
+  }
+}
+
+
+
+
+
+@media all and (max-width:550px)
+{
+  #contactLinks
+  {
+    padding-top: 10px;
+  }
+  #contactLinks span
+  {
+    width: 100%;
+    display: block;
+    color: white;
+  }
+  .blogPost
+  {
+    width: 50%;
+    display: inline-block;
+    padding: 5px 10px;
+  }
+}
+
+
+
+
+
+
+
+@media all and (max-width: 380px)
+{
+  h3
+  {
+    font-size: 23px;
+  }
+  h5
+  {
+    font-size: 18px;
+  }
+  .blogPost
+  {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+  }
+}

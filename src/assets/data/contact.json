@@ -1,0 +1,114 @@
+{
+  "_comments" : [
+    {
+      "_blog":[
+        {
+          "_blogId": "number. The lower on the list, the higher the number",
+          "_blogTitle": "TITLE TITLE",
+          "_blogDate": "DD Month YYYY",
+          "_blogSummary": "What my personal Blog will be about",
+          "_blogImage": "assets/ImageLocation; 4x6 OR 2x3 dimmensions ONLY. else it will not look right",
+          "_blogEssay": [
+            {
+              "_sectionBreak": "false; if 'true', a small line break will appear",
+              "_paragraphImg":"false; write 'false' if no image is used",
+              "_imageCaption" : "false; same as image",
+              "_sectionTitle" : "false; same thing as image",
+              "_firstLetter":"P; same deal with image. write false to take out of DOM",
+              "_blogParagraph": "aragraph 1. \"quotes\". use a different object for more paragraphs"
+            }
+          ]
+        }
+      ]
+    }
+
+  ],
+  "contact" : [
+    {
+      "contactImg" : "assets/contact/ContactMe.png",
+      "phoneNumber": "8629023780",
+      "email" : "aparcanapavel@gmail.com",
+      "twitter" : "https://twitter.com/PavelAparcana",
+      "YouTube" : "https://www.youtube.com/channel/UCSX5EecTV19BqQDjYIGa5Ug",
+      "github" : "https://github.com/aparcanapavel",
+      "linkedin" : "https://www.linkedin.com/in/pavel-aparcana/",
+      "myQuote" : "I believe meaningful relationships are built on respect and honesty. I intend on building relationships with my peers and to work together toward a common goal. Further, I hope to achieve success through collaboration, passion, and hard work."
+    }
+  ],
+  "blogs" : [
+    {
+      "blogId": "1",
+      "blogTitle": "Hello World!",
+      "blogDate": "30 May 2019",
+      "blogSummary": "What my personal Blog will be about",
+      "blogImage": "assets/contact/blog/helloWorld.jpg",
+      "blogEssay": [
+        {
+          "sectionBreak": "false",
+          "paragraphImg":"false",
+          "imageCaption": "false",
+          "sectionTitle" : "false",
+          "firstLetter":"H",
+          "blogParagraph": "ello and welcome to the blog portion of my website! My professional journey began a little over a year ago, when I took a web design class at Rutgers University. In this class, we were taught the basic principles of Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), a little jQuery, and no JavaScript. Since, I have been using free online tools to learn new skills and take my current ones a step further. For example, I have been learning JavaScript, TypeScript, the Angular 7 framework, and Bootstrap for Angular. The reason for this is because of my web design professor stating to the class how important it is to learn JavaScript. With HTML and CSS, one is able to design interactive pages, however, with JavaScript, one is able to add much more to the interactivity between pages."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg":"false",
+          "imageCaption": "false",
+          "sectionTitle" : "false",
+          "firstLetter":"false",
+          "blogParagraph": "As I was learning JavaScript, I found out more about jQuery, thus allowing me to add more interactivity to my web design projects. I then challenged myself to create a personal website for one of my final classes at Rutgers. The final product then encouraged me to continue learning more, as I wanted to accomplish more in my pages, and I wanted more interactivity. As I continued to learn jQuery and JavaScript, I became exposed to the term “Angular”."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg":"false",
+          "imageCaption": "false",
+          "sectionTitle" : "false",
+          "firstLetter":"false",
+          "blogParagraph": "Learning Angular was a bit of a challenge at first, since it is a big framework, but the more I continue to work with it, the easier it has been getting. This also applied to TypeScript, since It is very similar to JavaScript. Learning these tools allowed me to officially take my projects to the next level. I am now able to have congruent websites with transitions and animations that make the web pages highly interactive. Looking back to about a year ago I can see that I have improved tremendously, but my journey definitively does not end here because there is so much more to learn. Here, in this blog section, I will be talking about current projects I am working on as well as future plans for my projects. Now that I have officially added a blog portion to my website, I am certain that I will be able look back and see my progress on becoming a full stack developer."
+        }
+      ]
+    },
+    {
+      "blogId": "2",
+      "blogTitle": "New Project & Source Codes!",
+      "blogDate": "5 July 2019",
+      "blogSummary": "What my personal Blog will be about",
+      "blogImage": "assets/contact/blog/2SourceCodes.jpg",
+      "blogEssay": [
+        {
+          "sectionBreak": "false",
+          "paragraphImg":"false",
+          "imageCaption" : "false",
+          "sectionTitle" : "false",
+          "firstLetter":"I",
+          "blogParagraph": " have gotten the opportunity to work on a new website for a small business owner. When I got the news, I was excited because this was the second website I was asked to design and develop for someone else. Doing websites for others allows me to see how motivated I can stay with finishing the website, while making sure it meets the client’s needs."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg":"false",
+          "imageCaption" : "false",
+          "sectionTitle" : "false",
+          "firstLetter":"false",
+          "blogParagraph": "As I have been building this website for the business owner, I have been very careful with the typescript, as well as what libraries I should import and what is really just making the website slow. The result so far is great, and all the website needs are real data (pictures and written text), as opposed of place holders and lorem ipsum text."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg":"false",
+          "imageCaption" : "false",
+          "sectionTitle" : "false",
+          "firstLetter":"false",
+          "blogParagraph": "The first time I did this, I was given the full freedom to design and develop a website, so I really wanted to see how far I can push my creativity. The result was this enormous monster of creativity that performed \"okay\", since it would start lagging and stuttering at times. This then allowed me to understand how important writing a well-structured code meant. This is something I am not only seeing in this website, but every time I update my personal website, I see the previous code and think how I can make it much shorter, for it to run faster and smoother."
+        },
+        {
+          "sectionBreak": "true",
+          "paragraphImg":"false",
+          "imageCaption" : "false",
+          "sectionTitle" : "false",
+          "firstLetter":"L",
+          "blogParagraph": "astly, I have been working on adding the source code (project files) onto GitHub for others to see my progress and how the websites are written. Since I am working with Angular 7, the compiled distributed files are not included as they are easy to acquire with simple angular commands."
+        }
+      ]
+    }
+  ]
+}
