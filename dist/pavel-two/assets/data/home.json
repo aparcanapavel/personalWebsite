@@ -1,0 +1,31 @@
+{
+  "aboutMe": "Highly motivated Rutgers IT graduate, pursuing a career in the technology field. Enjoys learning and developing technology skills. Self-taught in a number of computer programming languages and frameworks.",
+
+  "hike": [
+    {
+      "hikeImg":"assets/home/hikeMe.png",
+      "hikeParagraph" : "I find hiking to be extremely interesting because you can walk continuously, and before you know it, you just walked 5 miles. Further, after completing a hike, you get a feeling of accomplishment, knowing that you just walked for miles, reaching the top of the mountain or reaching the end of a trail. Lastly, hiking mountains is my favorite type of hike, since once at the top, one is able to see an amazing panoramic view that is also extremely peaceful."
+    }
+  ],
+  "photography" : [
+    {
+      "photoParagraph" : "Although I have had a DSLR for a few years, I was more of a cinematographer, taking videos whenever I could. After I took a pause on making videos (because they require lots of time to record and to edit), I began taking pictures. Even if I did not have my DSLR camera, I took pictures with my iPhone, especially after I acquired the iPhone 8 plus, which takes amazing pictures on portrait mode. Further, I have recently acquired a new telephoto zoom lens (70-200mm) that I have been using for nature photography.",
+      "photoImgs" : [
+        { "photoImage" : "assets/home/photography/booboo.jpg" },
+        { "photoImage" : "assets/home/photography/babyGoat.png" },
+        { "photoImage" : "assets/home/photography/maxDog.jpg" },
+        { "photoImage" : "assets/home/photography/mamba.png" },
+        { "photoImage" : "assets/home/photography/temple.png" },
+        { "photoImage" : "assets/home/photography/vegasStrip.png" }
+      ]
+    }
+  ],
+  "cinematography" : [
+    {
+      "logo" : "assets/home/logoBlack.png",
+      "cinemaParagraph" : "The art of Cinematography is something that has interested me ever since I was a child. My uncles would always have expensive camera equipment in which they would record family gatherings and that is what sparked my interest. After I acquired a DLSR Camera (Canon T5i), I began shooting videos and learning more about how to get amazing camera angles. After a year, I took courses on Cinema Studies, taking my skills to a new level. Cinematography has turned into a hobby that I am passionate about, but unfortunately they are very time consumming. All of my videos have been recorded and edited by me. To view more of my videos, click ",
+      "videoURL" : "https://www.youtube-nocookie.com/embed/BEqlTJfaDEo",
+      "channelURL" : "https://www.youtube.com/channel/UCSX5EecTV19BqQDjYIGa5Ug"
+    }
+  ]
+}

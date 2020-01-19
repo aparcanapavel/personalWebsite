@@ -1,0 +1,455 @@
+{
+  "_comments" : [
+    {
+      "_projects" : [
+        {
+          "_projID": "##",
+          "_projTitle": "Project Title",
+          "_projDate": "Month Year",
+          "_projURL": "http://livelink.com",
+          "_gitURL": "https://github.com/aparcanapavel/sourcecode",
+          "_routeURL": "",
+          "_projIcon": "assets/portfolio/projects/.../icon.ico",
+          "_projSummary": "5 word summary",
+          "_slideShow": [
+            {
+              "_slide": "assets/portfolio/projects/path/image.png",
+              "_imgTitle": "caption"
+            },
+            {
+              "_slide": "assets/portfolio/projects/image.png",
+              "_imgTitle": "caption 2"
+            }
+          ],
+          "_projEssay": [
+            {
+              "_projParagraph": "paragraph1"
+            },
+            {
+              "_projParagraph": "paragraph 2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "projects" : [
+    {
+      "projID" : "1",
+      "projTitle" : "Paction Productions",
+      "projIcon" : "assets/home/logoBlack.png",
+      "projDate" : "Fall 2017",
+      "projURL" : "https://pactionproductions.wordpress.com/",
+      "gitURL" : "false",
+      "routeURL" : "",
+      "projSummary" : "Semester long project using WordPress",
+      "slideShow" : [
+        {
+          "slide" : "assets/portfolio/projects/paction/landingBlog.png",
+          "imgTitle":"YouTube Landing Blog"
+        },
+        {
+          "slide" : "assets/portfolio/projects/paction/landingBlog2.png",
+          "imgTitle":"YouTube Landing Blog(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/paction/landingBlog3.png",
+          "imgTitle":"YouTube Landing Blog(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/paction/landingBlog4.png",
+          "imgTitle":"YouTube Landing Blog(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/paction/about.png",
+          "imgTitle":"About the Blog"
+        },
+        {
+          "slide" : "assets/portfolio/projects/paction/about2.png",
+          "imgTitle":"About the Blog"
+        }
+      ],
+      "projEssay" : [
+        {
+          "projParagraph" : "At the beginning of the fall 2017 semester, I was tasked to create a blog website in the Strategic Presentation class at Rutgers University. At the time, I did not have experience on web design or WordPress, which we were instructed to use. As the course moved on, I began learning the uses of information and in what ways that information can be delivered and presented. Each of the course assignments made me familiar with managing the tools that Wordpress offers."
+        },
+        {
+          "projParagraph" : "By the end of the semester I planned on making this a blog page for my YouTube Channel, but I postponed it due to WordPress being limited with the themes and designs it offers. Taking this class allowed me to learn and utilize SoundCloud and Audacity, which I had little to no previous exposure to the platforms."
+        }
+      ]
+    },
+    {
+      "projID" : "2",
+      "projTitle" : "Alpha Phi Delta Project",
+      "projDate" : "Spring 2018",
+      "projURL" : "http://rutgersapd.org/",
+      "gitURL" : "https://github.com/aparcanapavel/apdWebsite",
+      "routeURL" : "",
+      "projIcon" : "assets/portfolio/projects/projectIcons/apdCrest.png",
+      "projSummary" : "Web Design final project for a local organization",
+      "slideShow" : [
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1home1.png",
+          "imgTitle":"Version 1 - Home Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1home2.png",
+          "imgTitle":"Version 1 - Home(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1home3.png",
+          "imgTitle":"Version 1 - Home(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1bro1.png",
+          "imgTitle":"Version 1 - Our Brotherhood"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1bro2.png",
+          "imgTitle":"Version 1 - Our Brotherhood(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1contact.png",
+          "imgTitle":"Version 1 - Contact Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1.5home.png",
+          "imgTitle":"Version 1.5 - Home Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1.5home2.png",
+          "imgTitle":"Version 1.5 - Home Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1.5brotherhood.png",
+          "imgTitle":"Version 1.5 - Our Brotherhood"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1.5brotherhood2.png",
+          "imgTitle":"Version 1.5 - Our Brotherhood(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/apdWeb/v1.5contact.png",
+          "imgTitle":"Version 1.5 - Contact Page"
+        }
+      ],
+      "projEssay" : [
+        {
+          "projParagraph" : "During the Spring 2018 semester, I took my first web design class. For the final project, we were assigned to design a website for a local restaurant or campus organization. Being a member of Alpha Phi Delta fraternity, I noticed that my organization did not have a website for the Rutgers entity, so I decided to design one. This project allowed me to get a strong introduction to HTML, CSS, and jQuery, as well as Google domains, GitHub, and codepen.io."
+        },
+        {
+          "projParagraph" : "The first version of rutgersapd.org had bugs, the HTML and CSS structure were not property written, and all previous image links were now outdated which led to the page becoming unformatted and meshed. After working with the Angular 7 tutorial, I wanted to become more familiar with angular, so I began rebuilding the website. This time around, i madesure that the HTML and CSS were properly written, as well as storing images in a local folder."
+        }
+      ]
+    },
+    {
+      "projID" : "3",
+      "projTitle" : "DCIM Capstone",
+      "projDate" : "Fall 2018",
+      "projURL" : "",
+      "gitURL" : "https://github.com/aparcanapavel/personalWebsite",
+      "routeURL" : "portfolio/3/dcimcapstone",
+      "projIcon" : "assets/newLogo.png",
+      "projSummary" : "Personal website build",
+      "slideShow" : [
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1Landing.png",
+          "imgTitle":"Version 1 - Home Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1Landing2.png",
+          "imgTitle":"Version 1 - Home(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1XP.png",
+          "imgTitle":"Version 1 - Experience Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1XP2.png",
+          "imgTitle":"Version 1 - Experience(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1XP3.png",
+          "imgTitle":"Version 1 - Experience(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1Interests.png",
+          "imgTitle":"Version 1 - Interests Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1Interests2.png",
+          "imgTitle":"Version 1 - Interests(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1Interests3.png",
+          "imgTitle":"Version 1 - Interests(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1Projects.png",
+          "imgTitle":"Version 1 - Projects Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1Projects2.png",
+          "imgTitle":"Version 1 - Projects(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1Contact.png",
+          "imgTitle":"Version 1 - Contact"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5Landing.png",
+          "imgTitle":"Version 1.5 - Landing Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5Landing2.png",
+          "imgTitle":"Version 1.5 - Landing(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5Interest.png",
+          "imgTitle":"Version 1.5 - Interests Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5Interests2.png",
+          "imgTitle":"Version 1.5 - Interests(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5Interests3.png",
+          "imgTitle":"Version 1.5 - Interests(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5Projects.png",
+          "imgTitle":"Version 1.5 - Projects Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5Projects2.png",
+          "imgTitle":"Version 1.5 - Projects(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5Projects3.png",
+          "imgTitle":"Version 1.5 - Projects(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/dcimWeb/v1.5contact.png",
+          "imgTitle":"Version 1.5 - Contact Page"
+        }
+      ],
+      "projEssay" : [
+        {
+          "projParagraph" : "During the Fall 2018 semester, I was assigned a two-part semester long project. One part was to make a personal website, and the second part was to cover a topic of interest and post it within the personal website. While we were given the option to use WordPress or Wix, I felt like those websites did not give me as much freedom  as if I wrote the website using HTML, CSS, and jQuery. This would also give me a second opportunity to design a second website entirely from using HTML, CSS, some JavaScript and jQuery."
+        },
+        {
+          "projParagraph" : "We were assigned to have a landing page, an experience page, an interest page, a projects page, and a contact page with our choice of content per page. At the end of the semester, the project became my official personal website. As I continue to learn new things for web design, I look back at my projects and see what other things I can bring to make them better. For example, after working with Angular 7, I rebuilt this website with better aesthetics and gave it a more professional look. That became version 1.5 of this website and it stayed like that for a couple of months."
+        },
+        {
+          "projParagraph" : "On May 2019, I decided to upgrade the website once again, which turned out to be a rebuilt. I wanted to really think about the information being displayed and how it was displayed. Further, I wanted to add a blog to it. Today, the website is on version 2.0, with an upgraded navigation menu, colors, banners, and content."
+        }
+      ]
+    },
+    {
+      "projID" : "4",
+      "projTitle" : "Chris Mathew Project",
+      "projDate" : "April 2019",
+      "projURL" : "http://cmathew.info/",
+      "gitURL" : "https://github.com/aparcanapavel/cmathewWebsite",
+      "routeURL" : "",
+      "projIcon" : "assets/portfolio/projects/projectIcons/chrisIcon.ico",
+      "projSummary" : "Website rebuilt with added features",
+      "slideShow" : [
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v1Landing.png",
+          "imgTitle":"Version 1 - Home Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v1Landing2.png",
+          "imgTitle":"Version 1 - Home(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v1Landing3.png",
+          "imgTitle":"Version 1 - Home(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v2Landing.png",
+          "imgTitle":"Version 2 - Home Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v2Landing2.png",
+          "imgTitle":"Version 2 - Home(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v2Blog.png",
+          "imgTitle":"Version 2 - Blog"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v2XP.png",
+          "imgTitle":"Version 2 - Experience Page"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v2XP.png",
+          "imgTitle":"Version 2 - Experience(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v2XP2.png",
+          "imgTitle":"Version 2 - Experience(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v2XP3.png",
+          "imgTitle":"Version 2 - Experience(cont)"
+        },
+        {
+          "slide" : "assets/portfolio/projects/chrisMathew/v2Contact.png",
+          "imgTitle":"Version 2 - Contact Page"
+        }
+      ],
+      "projEssay" : [
+        {
+          "projParagraph" : "At the beginning of the month of April, a client reached out to me to rebuild his website. This was the first time since working closely with Angular that I was approached to redesign and rebuild a website. The client had asked me to make sure that the website had a home page, an experience page, a contact page, and an added blog section."
+        },
+        {
+          "projParagraph" : "Before beginning, I went ahead to look at the website he had built to check the design and to begin transferring the data onto JavaScript Object Notation (JSON). At this stage, I also chose to go with a similar color combination and began the project."
+        },
+        {
+          "projParagraph" : "At the end of my version of the project (version2), I learned how to write JSON accordingly, as well as how to transfer information through the HTTP service that Angular provides. Lastly, I learned how to manipulate the HTML better to meet my desired design and I also learned how Angular transitions work. Overall, this project challenged my knowledge of Angular, HTML, CSS, and TypeScript. Fortunately, I was able to overcome these challenges and create a whole new website and design that I am proud to put my name on it."
+        }
+      ]
+    },
+    {
+      "projID": "5",
+      "projTitle": "Astrogram",
+      "projDate": "November 2019",
+      "projURL": "https://astrogram-prod.herokuapp.com/#/",
+      "gitURL": "https://github.com/aparcanapavel/astrogram",
+      "routeURL": "",
+      "projIcon": "assets/portfolio/projects/astrogram/astrogramIcon.png",
+      "projSummary": "Single page clone of Instagram",
+      "slideShow": [
+        {
+          "slide": "assets/portfolio/projects/astrogram/splash.png",
+          "imgTitle": "Welcome Screen for a new user"
+        },
+        {
+          "slide": "assets/portfolio/projects/astrogram/newImageModal1.png",
+          "imgTitle": "Submit an Image"
+        },
+        {
+          "slide": "assets/portfolio/projects/astrogram/newImageModal2.png",
+          "imgTitle": "Submit an Image(cont)"
+        }
+      ],
+      "projEssay": [
+        {
+          "projParagraph": "Astrogram includes the basic features of instagram, like creating an account, logging in, logging out, staying logged in after refreshing the page, and having a profile show page for users(current user pofile will display different settings). Further, Astrogram also has a feature outside of what is included in Instagram, uploading images from the browser instead of the app."
+        },
+        {
+          "projParagraph": "In order to handle the likes annimation, I used basic jQuery to add and remove classess to the heart element. In the end, it allowed me to create a simple annimation that expands and fills the heart for liking it, and it shrinks and shows a outline of a heart"
+        }
+      ]
+    },
+    {
+      "projID": "6",
+      "projTitle": "Pollidify",
+      "projDate": "December 2019",
+      "projURL": "https://warm-crag-62563.herokuapp.com/#/",
+      "gitURL": "https://github.com/aparcanapavel/Pollidify",
+      "routeURL": "",
+      "projIcon": "assets/portfolio/projects/pollidify/icon.png",
+      "projSummary": "Global web application that allows users to create and respond to polls.",
+      "slideShow": [
+        {
+          "slide": "assets/portfolio/projects/pollidify/pollidify.png",
+          "imgTitle": "Welcome Screen"
+        },
+        {
+          "slide": "assets/portfolio/projects/pollidify/pollidify2.png",
+          "imgTitle": "session form"
+        },
+        {
+          "slide": "assets/portfolio/projects/pollidify/pollidify3.png",
+          "imgTitle": "World Polls page"
+        },
+        {
+          "slide": "assets/portfolio/projects/pollidify/pollidify4.png",
+          "imgTitle": "Create a poll"
+        }
+      ],
+      "projEssay": [
+        {
+          "projParagraph": "After learning the MERN stack (MongoDB, Express.js, React.js, & Node.js), my group members and I came up with an idea for a web application. It would allow users to create and share polls world wide. As we began implementing features, we quickly realized how difficult NoSQL databases were when it comes to relational data. However, we managed to create a simple, yet very important feature - auto deleteing polls after a certain time it has been expired along with all the polls, choices and user votes."
+        }
+      ]
+    },
+    {
+      "projID": "7",
+      "projTitle": "Study-fi",
+      "projDate": "December 2019",
+      "projURL": "https://study-fi.herokuapp.com/",
+      "gitURL": "https://github.com/aparcanapavel/Study-fi",
+      "routeURL": "",
+      "projIcon": "assets/portfolio/projects/study-fi/icon.png",
+      "projSummary": "Spotify based Web Application",
+      "slideShow": [
+        {
+          "slide": "assets/portfolio/projects/study-fi/welcome.png",
+          "imgTitle": "Home"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/queue.png",
+          "imgTitle": "Queue"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/create-playlist1.png",
+          "imgTitle": "New playlist"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/create-playlist2.png",
+          "imgTitle": "New playlist(cont)"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/create-playlist3.png",
+          "imgTitle": "New playlist(cont)"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/create-playlist4.png",
+          "imgTitle": "New playlist(cont)"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/playlistShow.png",
+          "imgTitle": "Playlist"
+        }
+      ],
+      "projEssay": [
+        {
+          "projParagraph": "Study-fi is a single page web application that is targeted towards students and/or professionals wanting to listen to calm beats to improve their focus and productivity. This is accomplished by having our library filled with lo-fi hip-hop beats. Further users are also able to create playlists, like songs, and play songs."
+        }
+      ]
+    },
+    {
+      "projID": "8",
+      "projTitle": "Visible",
+      "projDate": "January 2020",
+      "projURL": "https://pavelaparcana.com/visible/",
+      "gitURL": "https://github.com/aparcanapavel/visible",
+      "routeURL": "",
+      "projIcon": "assets/portfolio/projects/visible/icon.png",
+      "projSummary": "Audio Visualizer",
+      "slideShow": [
+        {
+          "slide": "assets/portfolio/projects/visible/welcome.png",
+          "imgTitle": "Welcome Screen"
+        },
+        {
+          "slide": "assets/portfolio/projects/visible/visualizer.png",
+          "imgTitle": "Visualizer(no music)"
+        },
+        {
+          "slide": "assets/portfolio/projects/visible/visualizer2.png",
+          "imgTitle": "Visualizer(music)"
+        }
+      ],
+      "projEssay": [
+        {
+          "projParagraph": "Visible is a audio visualizer that takes properties from audio files and renders a shapes based on the audio properties. Visible was built using HTML, CSS, JavaScript with p5.js for DOM manipulation and audio analysis."
+        }
+      ]
+    }
+  ]
+}

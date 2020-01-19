@@ -8,8 +8,8 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, data: { depth: '1'} },
-  { path: 'portfolio', component: PortfolioComponent, data: {depth:'2'}},
+  // { path: '', component: HomeComponent, data: { depth: '1'} },
+  { path: '', component: PortfolioComponent, data: {depth:'2'}},
   { path: 'portfolio/:id', component: ProjectComponent, data: {depth:'3'}},
   { path: 'portfolio/3/dcimcapstone', component: DcimComponent},
   { path: 'contact', component: ContactComponent, data: {depth:'4'}},

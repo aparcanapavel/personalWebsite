@@ -3,30 +3,30 @@
     {
       "_projects" : [
         {
-          "_projID" : "##",
-          "_projTitle" : "Title of the project",
-          "_projIcon" : "location of project icon",
-          "_projDate" : "mm yyyy",
-          "_projURL" : "Link to actual project--USE accordingly",
-          "_gitURL" : "URL to github repo. write false to not include in DOM",
-          "_routeURL" : "ONLY FOR DCIM CAPSTONE. to be used for future projects that require their own page. Leave black for the rest --USE accordingly",
-          "_projSummary" : "One sentence",
-          "_slideShow" : [
+          "_projID": "##",
+          "_projTitle": "Project Title",
+          "_projDate": "Month Year",
+          "_projURL": "http://livelink.com",
+          "_gitURL": "https://github.com/aparcanapavel/sourcecode",
+          "_routeURL": "",
+          "_projIcon": "assets/portfolio/projects/.../icon.ico",
+          "_projSummary": "5 word summary",
+          "_slideShow": [
             {
-              "_slide" : "path to the local file",
-              "_imgTitle":"title goes in the caption"
+              "_slide": "assets/portfolio/projects/path/image.png",
+              "_imgTitle": "caption"
             },
             {
-              "_slide" : "path to the local file",
-              "_imgTitle":"title goes in the caption"
+              "_slide": "assets/portfolio/projects/image.png",
+              "_imgTitle": "caption 2"
             }
           ],
-          "_projEssay" : [
+          "_projEssay": [
             {
-              "_projParagraph" : "Use \n\n for line breaks. \" for quotes \t for tab"
+              "_projParagraph": "paragraph1"
             },
             {
-              "_projParagraph" : ""
+              "_projParagraph": "paragraph 2"
             }
           ]
         }
@@ -147,9 +147,9 @@
       "projTitle" : "DCIM Capstone",
       "projDate" : "Fall 2018",
       "projURL" : "",
-      "gitURL" : "false",
+      "gitURL" : "https://github.com/aparcanapavel/personalWebsite",
       "routeURL" : "portfolio/3/dcimcapstone",
-      "projIcon" : "assets/portfolio/projects/projectIcons/DCIM.png",
+      "projIcon" : "assets/newLogo.png",
       "projSummary" : "Personal website build",
       "slideShow" : [
         {
@@ -309,6 +309,145 @@
         },
         {
           "projParagraph" : "At the end of my version of the project (version2), I learned how to write JSON accordingly, as well as how to transfer information through the HTTP service that Angular provides. Lastly, I learned how to manipulate the HTML better to meet my desired design and I also learned how Angular transitions work. Overall, this project challenged my knowledge of Angular, HTML, CSS, and TypeScript. Fortunately, I was able to overcome these challenges and create a whole new website and design that I am proud to put my name on it."
+        }
+      ]
+    },
+    {
+      "projID": "5",
+      "projTitle": "Astrogram",
+      "projDate": "November 2019",
+      "projURL": "https://astrogram-prod.herokuapp.com/#/",
+      "gitURL": "https://github.com/aparcanapavel/astrogram",
+      "routeURL": "",
+      "projIcon": "assets/portfolio/projects/astrogram/astrogramIcon.png",
+      "projSummary": "Single page clone of Instagram",
+      "slideShow": [
+        {
+          "slide": "assets/portfolio/projects/astrogram/splash.png",
+          "imgTitle": "Welcome Screen for a new user"
+        },
+        {
+          "slide": "assets/portfolio/projects/astrogram/newImageModal1.png",
+          "imgTitle": "Submit an Image"
+        },
+        {
+          "slide": "assets/portfolio/projects/astrogram/newImageModal2.png",
+          "imgTitle": "Submit an Image(cont)"
+        }
+      ],
+      "projEssay": [
+        {
+          "projParagraph": "Astrogram includes the basic features of instagram, like creating an account, logging in, logging out, staying logged in after refreshing the page, and having a profile show page for users(current user pofile will display different settings). Further, Astrogram also has a feature outside of what is included in Instagram, uploading images from the browser instead of the app."
+        },
+        {
+          "projParagraph": "In order to handle the likes annimation, I used basic jQuery to add and remove classess to the heart element. In the end, it allowed me to create a simple annimation that expands and fills the heart for liking it, and it shrinks and shows a outline of a heart"
+        }
+      ]
+    },
+    {
+      "projID": "6",
+      "projTitle": "Pollidify",
+      "projDate": "December 2019",
+      "projURL": "https://warm-crag-62563.herokuapp.com/#/",
+      "gitURL": "https://github.com/aparcanapavel/Pollidify",
+      "routeURL": "",
+      "projIcon": "assets/portfolio/projects/pollidify/icon.png",
+      "projSummary": "Global web application that allows users to create and respond to polls.",
+      "slideShow": [
+        {
+          "slide": "assets/portfolio/projects/pollidify/pollidify.png",
+          "imgTitle": "Welcome Screen"
+        },
+        {
+          "slide": "assets/portfolio/projects/pollidify/pollidify2.png",
+          "imgTitle": "session form"
+        },
+        {
+          "slide": "assets/portfolio/projects/pollidify/pollidify3.png",
+          "imgTitle": "World Polls page"
+        },
+        {
+          "slide": "assets/portfolio/projects/pollidify/pollidify4.png",
+          "imgTitle": "Create a poll"
+        }
+      ],
+      "projEssay": [
+        {
+          "projParagraph": "After learning the MERN stack (MongoDB, Express.js, React.js, & Node.js), my group members and I came up with an idea for a web application. It would allow users to create and share polls world wide. As we began implementing features, we quickly realized how difficult NoSQL databases were when it comes to relational data. However, we managed to create a simple, yet very important feature - auto deleteing polls after a certain time it has been expired along with all the polls, choices and user votes."
+        }
+      ]
+    },
+    {
+      "projID": "7",
+      "projTitle": "Study-fi",
+      "projDate": "December 2019",
+      "projURL": "https://study-fi.herokuapp.com/",
+      "gitURL": "https://github.com/aparcanapavel/Study-fi",
+      "routeURL": "",
+      "projIcon": "assets/portfolio/projects/study-fi/icon.png",
+      "projSummary": "Spotify based Web Application",
+      "slideShow": [
+        {
+          "slide": "assets/portfolio/projects/study-fi/welcome.png",
+          "imgTitle": "Home"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/queue.png",
+          "imgTitle": "Queue"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/create-playlist1.png",
+          "imgTitle": "New playlist"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/create-playlist2.png",
+          "imgTitle": "New playlist(cont)"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/create-playlist3.png",
+          "imgTitle": "New playlist(cont)"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/create-playlist4.png",
+          "imgTitle": "New playlist(cont)"
+        },
+        {
+          "slide": "assets/portfolio/projects/study-fi/playlistShow.png",
+          "imgTitle": "Playlist"
+        }
+      ],
+      "projEssay": [
+        {
+          "projParagraph": "Study-fi is a single page web application that is targeted towards students and/or professionals wanting to listen to calm beats to improve their focus and productivity. This is accomplished by having our library filled with lo-fi hip-hop beats. Further users are also able to create playlists, like songs, and play songs."
+        }
+      ]
+    },
+    {
+      "projID": "8",
+      "projTitle": "Visible",
+      "projDate": "January 2020",
+      "projURL": "https://pavelaparcana.com/visible/",
+      "gitURL": "https://github.com/aparcanapavel/visible",
+      "routeURL": "",
+      "projIcon": "assets/portfolio/projects/visible/icon.png",
+      "projSummary": "Audio Visualizer",
+      "slideShow": [
+        {
+          "slide": "assets/portfolio/projects/visible/welcome.png",
+          "imgTitle": "Welcome Screen"
+        },
+        {
+          "slide": "assets/portfolio/projects/visible/visualizer.png",
+          "imgTitle": "Visualizer(no music)"
+        },
+        {
+          "slide": "assets/portfolio/projects/visible/visualizer2.png",
+          "imgTitle": "Visualizer(music)"
+        }
+      ],
+      "projEssay": [
+        {
+          "projParagraph": "Visible is a audio visualizer that takes properties from audio files and renders a shapes based on the audio properties. Visible was built using HTML, CSS, JavaScript with p5.js for DOM manipulation and audio analysis."
         }
       ]
     }
