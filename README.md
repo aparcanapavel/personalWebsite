@@ -1,27 +1,31 @@
-# PavelTwo
+# Source Code(DEMO ONLY)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+## Technologies Used ##
+- Angular 7
+  - TypeScript
+  - JSON
+  - Node.js
+- HTML5
+- CSS3
+- jQuery
+- Bootstrap
 
-## Development server
+## Overview ##
+In the Rutgers DCIM Capstone class, we were asked to make a portfoilo page with certain requirements showcasing all the projects we have made in the DCIM Minor. Although we were allowed to use template sites like Wordpress and Wix, I wanted to push my HTML, CSS and jQuery knowledge at the time. The first version of the project met the requirements for the class and much more. Later, I continued to learn other technologies that helped me achieve the current version.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Development server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+- The app will automatically reload if you change any of the source files.
 
-## Build
+### Code scaffolding
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Run `ng generate component component-name` to generate a new component. 
+- You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Running unit tests
+### Build
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Run `ng build` to build the project. 
+- The build artifacts will be stored in the `dist/` directory. 
+- Use the `--prod` flag for a production build.
