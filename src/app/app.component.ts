@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { animate, state, style, transition, trigger, query, group } from '@angular/animations';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 declare var jquery:any;
 declare var $:any;
 
@@ -12,18 +13,26 @@ declare var $:any;
   animations: [
     trigger('bannerSwitch', [
       transition(':enter', [
-        style({ opacity: '0' }),
-        animate(350)
+        style({
+          opacity: '0',
+          height: '!'
+        }),
+        animate(100)
       ]),
       transition(':leave', [
-        animate(100)
+        style({ 
+          opacity: '1', 
+          position: 'absolute',
+          height: '!'
+        }),
+        animate(10)
       ]),
       // state('*', style({ backgroundColor: 'green' })),
     ]),
     trigger('routeAnimations', [
       transition('1=>2, 1=>4, 2=>4, 3=>4', [
         style({ height: '!'}), //sets the height to be the height at the end of the amination
-        query(':enter', style({ transform: 'translateX(100%)' })),
+        query(':enter', style({ transform: 'translateX(100%)', opacity: '0' })),
         query(':enter, :leave', style({
           position: 'absolute',
           top: 0,
@@ -33,10 +42,10 @@ declare var $:any;
         // animate the leave page away
         group([
             query(':leave', [
-                animate('0.3s cubic-bezier(.35,0,.25,1)', style({ transform: 'translateX(-100%)' })),
+              animate('0.3s cubic-bezier(.35,0,.25,1)', style({ transform: 'translateX(-100%)', opacity: '0' })),
             ]),
             // and now reveal the enter
-            query(':enter', animate('0.3s cubic-bezier(.35,0,.25,1)', style({ transform: 'translateX(0)' }))),
+          query(':enter', animate('0.3s cubic-bezier(.35,0,.25,1)', style({ transform: 'translateX(0)', opacity: '0' }))),
         ]),
       ]),
       // fade transitions
@@ -100,59 +109,60 @@ declare var $:any;
 })
 export class AppComponent implements OnInit
 {
-  pageTitle = "";
   // swich for the banners. Must be 3x7(18in by 42in)
-  public banners = "";
-  constructor()
+  constructor(private router: Router)
   {
 
   }
-  ngOnInit()
-  {
-    // this.banners= "homeBanner";
-    // this.pageTitle = "Home";
+  ngOnInit(){
   }
-  toggleMenu()
-  {
+
+  scrollToProjects(){
+    let portfolio = document.querySelector('#portfolioContainer');
+    
+    if(portfolio){
+      portfolio.scrollIntoView({
+        behavior: 'smooth'
+      });
+    } else {
+      this.router.navigate(['/']);
+    }
+  }
+  
+  toggleMenu(){
     $("#main-menu label, #pages").toggleClass("active");
   }
-  homeClick()
-  {
-    // console.log("home CLicked!");
-    this.banners = "homeBanner";
-    this.pageTitle = "Home";
+
+  homeClick(){
     this.removeActive();
     $("#pg1").addClass("active");
   }
-  portfolioClick()
-  {
-    // console.log("portfolio CLicked!");
-    this.banners = "portfolioBanner";
-    this.pageTitle = "Portfolio";
+
+  projectClick(){
     this.removeActive();
     $("#pg2").addClass("active");
   }
-  contactClick()
-  {
-    // console.log("contact CLicked!");
-    this.banners = "contactBanner";
-    this.pageTitle = "Contact";
+
+  portfolioClick(){
+    this.removeActive();
+    $("#pg2").addClass("active");
+  }
+
+  contactClick(){
     this.removeActive();
     $("#pg3").addClass("active");
   }
-  setActive(target)
-  {
+
+  setActive(target){
     $("#"+target).addClass("active");
   }
 
-  removeActive()
-  {
+  removeActive(){
     $("#main-menu label, #pages").removeClass("active");
     $("#pg1 ,#pg2 ,#pg3").removeClass("active");
   }
 
-  prepareRoute(outlet)
-  {
+  prepareRoute(outlet){
     return outlet.activatedRouteData['depth'];
   }
 }

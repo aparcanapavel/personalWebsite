@@ -20,8 +20,7 @@ declare var $:any;
       ]),
       transition(':leave', [
         animate(0)
-      ]),
-      // state('*', style({ backgroundColor: 'green' })),
+      ])
     ])
   ]
 })
@@ -32,19 +31,16 @@ export class DcimComponent implements OnInit {
   constructor(private _setHeaders : AppComponent)
   {
     // sets the header to the portfolio background
-    this._setHeaders.portfolioClick();
+    this._setHeaders.projectClick();
     // sets the title to projects
-    this._setHeaders.pageTitle = "DCIM Presentation";
   }
 
-  ngOnInit()
-  {
+  ngOnInit(){
     this.dcimSwitch = "dcimIntro";
     $("#IntroDCIM").addClass("activeSub");
-    // $("#subMenu").addClass("slideUpSub");
   }
-  activateSwitch(x,e)
-  {
+
+  activateSwitch(x,e){
     // x is the switch name
     this.dcimSwitch = x;
     // e is the event

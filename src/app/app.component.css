@@ -7,6 +7,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 #backgound
 {
   position: fixed;
@@ -14,118 +18,53 @@
   height: 100%;
   top:0px;
   z-index: -1;
-  /* background-color: rgba(0, 42, 64, 0.9); */
-  /* background-color: #002A40; */
-  background-color: #002940;
+  background-color: #485E70;
 }
-#container
-{
-  width: 100%;
-  margin: 0 auto;
+
+#nav-container{
+  background-color: #2F3E4A;
+}
+
+#inner-nav-container{
   max-width: 960px;
-  min-width: 275px;
-  /*line below controls the background color if greater than 1080px, center it*/
-  margin: 0px auto;
-  overflow-x: hidden;
-  z-index: 1;
+  margin: 0 auto;
 }
-.header-background
-{
-  width: 100%;
-  display: block;
-  position: absolute;
-  /* added extra 8px because the margin pushes it down 8px */
-  height: 120px;
-  background-color: #004266;
-  left: 0px;
-  z-index: 0;
-  margin-top: -8px;
-}
-#header
-{
-  width: 100%;
-  display: block;
+
+#page-logo{
   position: relative;
-  height: 110px;
-  font-family: sans-serif;
-  margin-left: 0px;
-  z-index: 1;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 13px;
 }
-#name
-{
-  display: inline-block;
-  position: absolute;
-  margin-top: 30px;
-  left: 15px;
-  color: white;
-  z-index: 0;
+
+#page-logo:focus{
+  outline: none;
 }
-#header > p
-{
-  display: block;
-  position: absolute;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  margin-top: 65px;
-  left: 17px;
-  z-index: 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 15px;
-}
-#quickContact
-{
-  display: inline-block;
-  position: absolute;
-  list-style: none;
-  font-size: 25px;
-  top: 5px;
-  right: 15px;
-  z-index: 2;
-}
-#quickContact > li
-{
-  width: 30px;
-  height: 30px;
-  margin-bottom: 5px;
-  background-color: white;
-  text-align: center;
-  border-radius: 5px;
-  transition: background-color 0.2s;
-}
-#quickContact > li:hover
-{
-  background-color: #007FBF;
-  transition: background-color 0.3s;
-}
-#quickContact > li > a:hover
-{
-  color: white;
-  transition: color 0.3s;
-}
-#quickContact > li > a
-{
-  text-decoration: white;
-  color: black;
-  padding: 4px 4px;
-  vertical-align: top;
-}
-#quickContact > li:nth-of-type(2) > a
-{
-  font-size: 23px;
-}
+
 #main-menu > input,
 #main-menu > label
 {
   display: none;
+  will-change: border-color, color, background-color;
 }
 #main-menu
 {
   z-index: 1;
+  font-family: 'Heebo', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  top: 3px;
 }
 #pages
 {
   position: relative;
-  /* background-color: blue; */
   font-family: sans-serif;
   margin-right: 85px;
   float: right;
@@ -160,15 +99,15 @@
 {
   text-decoration: none;
   cursor: pointer;
-  color: #00A6FF;
-  border-bottom: 3px solid #00A6FF;
+  color: #89B3D6;
+  border-bottom: 3px solid #89B3D6;
   transition: 0.4s;
 }
 #pages > a.active
 {
   text-decoration: none;
-  color: #00A6FF;
-  border-bottom: 3px solid #00A6FF;
+  color: #89B3D6;
+  border-bottom: 3px solid #89B3D6;
 }
 
 #banners
@@ -215,17 +154,73 @@
   display: block;
   background-image: linear-gradient(#002940 40%, #004266);
 }
+
+.welcome-header{
+  width: 100%;
+  position: relative;
+  padding: 150px 50px;
+  transition: opacity 0.3s;
+}
+
+.welcome-header h3,
+.welcome-header > p{
+  color: white;
+  width: auto;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+}
+
+.welcome-header h3{
+  font-size: 65px;
+}
+
+.welcome-header > p {
+  font-size: 20px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.to-projects{
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  max-width: 150px;
+  padding: 0px 20px;
+  font-family: 'Heebo', sans-serif;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  bottom: -60px;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+@keyframes borderBlink {
+50% { border-color: #89B3D6; }
+}
+
+@keyframes colorBlink {
+50% { color: #89B3D6; }
+}
+
+.to-projects:hover{
+  color: black;
+  background-color: whitesmoke;
+}
+
+.to-projects i {
+  animation: colorBlink 2.5s linear infinite;
+}
+
+
+
 #container2
 {
   position: relative;
   display: block;
   width: 100%;
   margin: 0 auto;
-  /* max-width: 960px; */
-  /* min-width: 275px; */
   z-index: 1;
-  padding: 0 15px;
-
   overflow: visible;
 }
 
@@ -233,7 +228,6 @@
 #footer
 {
   position: relative;
-  /* bottom: 4px; */
   width: 100%;
   color: white;
   z-index: 1;
@@ -241,10 +235,8 @@
 #quickLinks
 {
   width: 100%;
-  /* height: 40px; */
   font-family: sans-serif;
   text-align: center;
-  /* background-color:  rgb(72,91,109); */
 }
 #footer > h3
 {
@@ -253,7 +245,6 @@
   padding-bottom: 10px;
   font-family: sans-serif;
   position: relative;
-  /* left:35%; */
 }
 
 #quickLinks > li
@@ -269,19 +260,17 @@
   width: 100%;
   color: white;
   text-decoration:none;
-  /* text-align: center; */
   padding-left: 0px;
   transition: color 0.3s;
 }
 #quickLinks > li > a:hover
 {
   cursor: pointer;
-  color: #0085CC;
+  color: #89B3D6;
   transition: color 0.4s;
 }
 #signature
 {
-  /* background-color: rgb(72,91,109); */
   text-align: right;
   padding-right: 5px;
   color: white;
@@ -318,8 +307,6 @@
     display: block;
     width: 100%;
     margin: 0 auto;
-    /* max-width: 960px; */
-    /* min-width: 275px; */
     z-index: 1;
     padding: 0 0px;
     overflow: visible;
@@ -336,74 +323,94 @@
 /* Mobile Switch! */
 @media all and (max-width:650px)
 {
-  #container2
+  #page-logo
   {
-    position: relative;
-    display: block;
-    width: 100%;
     margin: 0 auto;
-    /* max-width: 960px; */
-    /* min-width: 275px; */
-    z-index: 1;
-    padding: 0 0px;
-    overflow: visible;
+    width: auto;
   }
-  #name,
-  #header p
-  {
-    display: inline-block;
-    position: absolute;
+
+  .welcome-header{
     width: 100%;
+    position: relative;
+    padding: 50px 50px;
+    height: 250px;
+  }
+
+  .welcome-header h3,
+  .welcome-header > p{
+    color: white;
+    width: auto;
     text-align: center;
-    margin-top: 30px;
-    left: 0px;
+    font-family: 'Questrial', sans-serif;
   }
-  #name
-  {
-    font-size: 25px;
+
+  .welcome-header h3{
+    font-size: 45px;
   }
-  #header > p
-  {
-    margin-top: 65px;
-    font-size: 14px;
+
+  .welcome-header > p {
+    font-size: 15px;
+    font-family: 'Heebo', sans-serif;
   }
-  #quickContact
-  {
-    right: 10px;
+
+  .to-projects{
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    max-width: 150px;
+    padding: 0px 20px;
+    font-family: 'Heebo', sans-serif;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    bottom: -30px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  #quickContact{
+    position: relative;
     z-index: 2;
   }
-  #main-menu > input
-  {
-    display: none;
+  #main-menu{
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+    z-index: 2;
   }
+
   #main-menu > label
   {
     display: block;
     position: absolute;
     top: 0px;
-    margin-top: 32px;
-    font-size: 30px;
+    left: 5px;
+    margin-top: -55px;
+    font-size: 23px;
     color: white;
     padding: 8px;
     border: 1px solid white;
     border-radius: 5px;
     z-index: 1;
-    transition: 0.4s;
+    cursor: pointer;
+    transition: border-color, color, background-color 0.4s;
   }
   #main-menu label.active
   {
-    border-color: #00A6FF;
-    color: #00A6FF;
-    cursor: pointer;
-    background-color: white;
+    border-color: #89B3D6;
+    color: #89B3D6;
+    background-color: rgba(128, 128, 128, 0.62);
   }
   #pages
   {
     position: absolute;
     background-color: black;
     margin-right: 0px;
-    float: none;
-    margin-top: -3px;
+    margin-top: 0px;
     z-index: 2;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -452,7 +459,6 @@
   #footer
   {
     position: relative;
-    /* bottom: 4px; */
     width: 100%;
     color: white;
     z-index: 1;
@@ -460,10 +466,8 @@
   #quickLinks
   {
     width: 100%;
-    /* height: 40px; */
     font-family: sans-serif;
     text-align: center;
-    /* background-color:  rgb(72,91,109); */
   }
   #footer > h3
   {
@@ -473,7 +477,6 @@
     font-family: sans-serif;
     position: relative;
     font-size: 20px;
-    /* left:35%; */
   }
 
   #quickLinks > li
@@ -486,7 +489,6 @@
   }
   #signature
   {
-    /* background-color: rgb(72,91,109); */
     text-align: right;
     padding-right: 5px;
     color: white;

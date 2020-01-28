@@ -32,7 +32,9 @@
       "YouTube" : "https://www.youtube.com/channel/UCSX5EecTV19BqQDjYIGa5Ug",
       "github" : "https://github.com/aparcanapavel",
       "linkedin" : "https://www.linkedin.com/in/pavel-aparcana/",
-      "myQuote" : "I believe meaningful relationships are built on respect and honesty. I intend on building relationships with my peers and to work together toward a common goal. Further, I hope to achieve success through collaboration, passion, and hard work."
+      "myQuote" : "I believe meaningful relationships are built on respect and honesty. I intend on building relationships with my peers and to work together toward a common goal. Further, I hope to achieve success through collaboration, passion, and hard work.",
+      "angelList" : "https://angel.co/pavel-andrei-aparcana",
+      "resume" : "../../assets/resume.pdf"
     }
   ],
   "blogs" : [
@@ -89,7 +91,7 @@
           "paragraphImg":"false",
           "imageCaption" : "false",
           "sectionTitle" : "false",
-          "firstLetter":"false",
+          "firstLetter": "false",
           "blogParagraph": "As I have been building this website for the business owner, I have been very careful with the typescript, as well as what libraries I should import and what is really just making the website slow. The result so far is great, and all the website needs are real data (pictures and written text), as opposed of place holders and lorem ipsum text."
         },
         {
@@ -97,7 +99,7 @@
           "paragraphImg":"false",
           "imageCaption" : "false",
           "sectionTitle" : "false",
-          "firstLetter":"false",
+          "firstLetter": "false",
           "blogParagraph": "The first time I did this, I was given the full freedom to design and develop a website, so I really wanted to see how far I can push my creativity. The result was this enormous monster of creativity that performed \"okay\", since it would start lagging and stuttering at times. This then allowed me to understand how important writing a well-structured code meant. This is something I am not only seeing in this website, but every time I update my personal website, I see the previous code and think how I can make it much shorter, for it to run faster and smoother."
         },
         {
@@ -105,8 +107,194 @@
           "paragraphImg":"false",
           "imageCaption" : "false",
           "sectionTitle" : "false",
-          "firstLetter":"L",
+          "firstLetter": "L",
           "blogParagraph": "astly, I have been working on adding the source code (project files) onto GitHub for others to see my progress and how the websites are written. Since I am working with Angular 7, the compiled distributed files are not included as they are easy to acquire with simple angular commands."
+        }
+      ]
+    },
+    {
+      "blogId": "3",
+      "blogTitle": "I Joined a Coding Boot camp!",
+      "blogDate": "16 August 2019",
+      "blogSummary": "Exciting news!",
+      "blogImage": "assets/contact/blog/3appAcademy.jpg",
+      "blogEssay": [
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "I",
+          "blogParagraph": "have some very exciting news! I didn’t get to update my website right away, but I actually have begun the App Academy boot camp. You may be wondering, what is App Academy? Well, let me tell you a little something about it."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "I first head of App Academy through an ad on a social media platform. At first, I did not know what to think of it. Is it a scam? Will they actually help me out? And after some research, I actually found out that it is exactly what I need in order for me to reach one of my goals, which is to be a full-stack developer. The class started the 5th of August and it is all online. I know you may be thinking, \"online?! Why would you do this to yourself?\""
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "So far, these first 2 weeks have been very interesting. Actually, let me bring it back to the application part. "
+        },
+        {
+          "sectionBreak": "true",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "F",
+          "blogParagraph": "irst, the application process was something I was not expecting. They have a whole process where applicants have to complete coding challenges, questions about algorithms, and simple math problems. This is already much different than any other type of application I have done. I guess, this is really for them to see that the applicants have the basic knowledge in order to learn programming"
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "Once I got past the first part of the application, I had to schedule an appointment for an online interview. Once I was at this step, I was nervous but not too much. App Academy actually presents you with some online Ruby programming classes that will show you exactly what they are looking for. Nothing more. Nothing less. With that being said, it was a little challenging, but the pre-course actually allowed me to feel confident."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "After the interview ended, which lasts about 45 minutes (it goes quicker than you think), then I was left feeling anxious, but also confident. I know it sounds like two complete opposites but hear me out. I was sure I managed to finish all coding problems, but I was not too sure about what they thought about me. Anyway, after a couple of days, I got a really awesome email from App Academy, which relieved all the anxiety I had, and left me full of confidence. The contents of this email were contracts, starting date, what I should be doing in the meantime, and other useful information."
+        },
+        {
+          "sectionBreak": "true",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "The First Week",
+          "firstLetter": "A",
+          "blogParagraph": "t the beginning, the online lectures are a continuation of the intro Ruby lectures they give you during the application process. The first four weeks, we are able to go through the lectures at our own time but are required to be present during the office hours. As of right now, office hours are Monday through Friday 1pm (PT)-5pm (PT). As you may have noticed, that is in pacific standard time, which means that I had to adjust to eastern time (4pm- 8pm EST). During the first week, you get to learn more terminology, methods, and are being continuously introduced to new aspects of the Ruby programming language, along with practice problems that you have to complete prior to the next office hours. The first week also holds the first practice assessment. This assessment was a wakeup call for me. I ended up getting stuck in a problem, and then began panicking. Unfortunately, I ended up spending too much time in that problem that I had to rush through the rest of the problems. As you probably know, rushing things is never okay, and many things can go wrong, which they did for me. I was not happy with my performance at all. "
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "After a couple of hours, I decided to give the assessment problems one more attempt, except without a time limit, where I was able to really think about a problem and be calm. After less than an hour, I was able to solve all the problems, mainly because I decided to skip the one I had trouble with, and come back to it later. Once I finished, I proved to myself that I was able to solve each problem without errors and passing all test-cases. This small success fueled my motivation, which has stayed with me until today. "
+        },
+        {
+          "sectionBreak": "true",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "The Second Week",
+          "firstLetter": "W",
+          "blogParagraph": "When the second week started, the programming assignments began getting a tiny bit more complex. Do not let this scare you though, as they actually made things more interesting. Everything we learned actually started coming together. There was a second assessment as well, and this time, I took everything I had learned during the first assessment and I was able to successfully finish it in time. "
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "I just finished the second week of the course and I am very happy that I have been understanding all the topics until now. That is not to say that I have not been working on practice problems outside of app academy. Actually, I found these to be very helpful, and also, I have been challenging myself into creating my own small programs. Further, I have also been getting together with some members of my cohort through \"zoom\". This primarily helps me review things and also helps with repetition, as that is one of the ways I am able to remember things."
+        },
+        {
+          "sectionBreak": "true",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "T",
+          "blogParagraph": "oday, we actually got to have a Q & A with some members of a previous cohort that are currently on week 20 of their program. What they had to say actually got me a little excited about the future. Yeah, we’re going to have to work on harder and harder projects, but I know that the end result of those projects is going to be amazing. "
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "I personally got a little bit ahead onto the next day (Week 3: Day 1), and I was able to work on two super small and simple projects, but those projects have allowed me to understand more and more how Ruby classes are."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "So far, after two weeks of the program, I feel like everything was explained extremely well. Everything I learned prior to App academy, like the angular framework, is finally beginning to make more sense. I now understand why certain things, like classes and test cases, are structured in a very specific way. If this has only been the first two weeks of learning, I wonder what other programming skills, not just languages, but also the structure of my code, I will have by the end of the program!"
+        }
+      ]
+    },
+    {
+      "blogId": "4",
+      "blogTitle": "Time Flew",
+      "blogDate": "27 January 2020",
+      "blogSummary": "What has app academy been like?",
+      "blogImage": "assets/contact/blog/4Journey.jpg",
+      "blogEssay": [
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "I",
+          "blogParagraph": "t was nearly two years ago when I first began taking a class called \"Intro To Web Design\". At the time, I did not know how much of an impact taking this class would have on me. You may have read this in my about me paragraphs, but my professor, Fei Luo, was extremely passionate about web design. He always made sure the class knew what was happening as he taught different aspects of web design. At the end of the semester, professor Luo introduced us to JavaScript for one lecture and then told us that JavaScript was the key to making websites dynamic. As soon as he said that, I became hooked with programming. Professor Luo was the reason why I continued learning other web development technologies and he is the reason why I am motivated to learn even more"
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "As per my last blog entry, I stated I had joined a coding bootcamp. Since then, I am proud to say that I have become proficient in other technologies, as I have built full stack web application using those technologies individually, as well as with group members. If you would like to view those projects, they are on the portfolio tab! I have links to the live page hosted on Heroku, as well as the source code on my GitHub."
+        },
+        {
+          "sectionBreak": "true",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "So What Has App Academy Been Like?",
+          "firstLetter": "A",
+          "blogParagraph": "pp Academy is a super accelerated coding bootcamp, however, that is not to say that it is not possible to accomplish. As an App Academy student, you are expected to put in the weekly hours to make sure you are understanding the material. If you do not put in the hours, you will see yourself falling behind. You will see other students in your cohort understand certain topics much easier that other students, as well as you may see yourself understand topics quicker. Do not feel discouraged by this, instead, you have to see and adapt accordingly. "
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "There was a total of 6 assessments spread throughout the length of the immersive portion of the program. You will also get practice assessments which are highly recommended (I also recommend it. Studying with the practice assessments helped me tremendously). Unfortunately, if you fail 2 of these assessments, you will be deferred or taken out of the program. Study and practice tons and you will not have to worry about this!"
+        },
+        {
+          "sectionBreak": "true",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "A",
+          "blogParagraph": "fter finishing the last assessment, you then begin to work on your very first full stack application using Ruby on Rails, PostgreSQL, React/Redux, Node.js, JavaScript, and jQuery for server calls. This is when I made the decision to build Astrogram, a clone of Instagram. This project became challenging when it was time to start managing image files, since I had to use Amazon Web Services S3 buckets for the first time. I encountered many bugs throughout the process, but once I got it working, it became much easier."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "The next two projects were both in a group, one using purely the MERN Stack (MongoDB, Express.js, ReactJS, Node.js), and one using the MERN Stack plus GraphQL with Apollo Client. If the curriculum stays the same, you will find that using the MERN stack purely is challenging, especially when making any sort of association between two tables. Why? MongoDB is a NoSQL database that makes writing associations much harder than if we used PostgreSQL. So, what is GraphQL? It is a technology that makes writing queries much easier, however, if not planned correctly, it can cause issues later on when updating the local storage."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "Finally, you get to the very last individual project, the JavaScript project. I decided to build an audio visualizer using the p5.js library. This was one of my favorite projects because I was able to do a lot of DOM manipulation with vanilla JavaScript, plus I was able to refactor code accordingly to keep the project object oriented. DOM manipulation is one of the most fascinating things that frontend frameworks, like ReactJS and Angular, can do when rendering different pages. I wanted this small project to have the same type of feeling, so I pushed my JavaScript knowledge to its limit and in the end, I achieved the transitions I wanted."
+        },
+        {
+          "sectionBreak": "false",
+          "paragraphImg": "false",
+          "imageCaption": "false",
+          "sectionTitle": "false",
+          "firstLetter": "false",
+          "blogParagraph": "All in all, App Academy has been a great journey for me. Time has flown since the last blog entry and in that time, I have learned and become proficient in modern technologies for web development. What is next on this journey? Practice algorithms and Data Structures!"
         }
       ]
     }

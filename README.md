@@ -29,3 +29,28 @@ In the Rutgers DCIM Capstone class, we were asked to make a portfoilo page with 
 - Run `ng build` to build the project. 
 - The build artifacts will be stored in the `dist/` directory. 
 - Use the `--prod` flag for a production build.
+
+
+## Color Wheel
+__New Theme__
+- Darkest: #2F3E4A
+- Dark: #485E70
+- normal: #59748A
+- Light: #607E96
+- Lightest: #89B3D6
+
+```css
+/* Color Theme Swatches in Hex */
+.Darkest { color: #2F3E4A; }
+.Dark { color: #89B3D6; }
+.normal { color: #58738A; }
+.Light { color: #607E96; }
+.Lightest { color: #485E70; }
+
+/* Color Theme Swatches in RGBA */
+.Darkest { color: rgba(47, 62, 74, 1); }
+.Dark { color: rgba(137, 179, 214, 1); }
+.normal { color: rgba(88, 115, 138, 1); }
+.Light { color: rgba(96, 126, 150, 1); }
+.Lightest { color: rgba(72, 94, 112, 1); }
+```

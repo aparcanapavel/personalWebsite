@@ -1,12 +1,10 @@
-#dcimContainer
-{
-  border-left: 1px solid rgba(255,255,255,0.4);
-  border-right: 1px solid rgba(255,255,255,0.4);
+#dcimContainer{
   padding: 0 20px;
-  background-color: #004266;
+  background-color: #607E96;
   padding-top: 20px;
   padding-bottom: 100px;
-  max-width: 960px;
+  /* max-width: 960px; */
+  width: 100%;
   margin: 0 auto;
 }
 #dcim
@@ -14,9 +12,12 @@
   display: block;
   position: relative;
   width: 100%;
+  max-width: 960px;
   height: 690px;
   padding: 0px 10px;
   color:white;
+  margin: 0 auto;
+  box-sizing: border-box;
   /* background-color: gray; */
 }
 #dcimIntro

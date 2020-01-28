@@ -1,26 +1,51 @@
-<div id="projectContainer">
+<section class="welcome-header">
+  <p>Pavel A. Aparcana</p>
+  <p>Software Engineer</p>
 
-  <h3>{{ fullProject.projTitle }}</h3>
+  <ul id="quickContact">
+    <li tooltip="LinkedIn" placement="bottom">
+      <a href="https://www.linkedin.com/in/pavel-aparcana" class="fab fa-linkedin" target="_blank" title="LinkedIn"></a>
+    </li>
+    <li tooltip="Resume" placement="bottom">
+      <a href="assets/resume.pdf" class="fas fa-file-alt" target="_blank" rel="noopener noreferrer" title="Resume"></a>
+    </li>
+    <li tooltip="GitHub" placement="bottom">
+      <a href="https://github.com/aparcanapavel" target="_blank" rel="noopener noreferrer" class="fab fa-github"
+        title="GitHub"></a>
+    </li>
+  </ul>
 
-  <div class="projectIcon">
-    <a href="{{fullProject.projURL}}" routerLink="/{{fullProject.routeURL}}" target="_blank"><img src="{{ fullProject.projIcon }}" alt=""></a>
+  <div class="to-projects" routerLink="/">
+    <p>Projects</p>
+    <i class="fas fa-long-arrow-alt-left"></i>
   </div>
-  <div class="projectEssay">
-    <p *ngFor="let essay of fullProject.projEssay">{{essay.projParagraph}}
-    </p>
-    <p class="url"><a href="{{fullProject.projURL}}" routerLink="/{{fullProject.routeURL}}" target="_blank">Click here</a> to view the project</p>
-    <p *ngIf="fullProject.gitURL != 'false'" class="git">Source code: <a class="fab fa-github" href="{{fullProject.gitURL}}" target="_blank"></a></p>
-  </div>
+</section>
 
-  <div id="projectSlideshow">
-    <carousel [noPause]="false">
-      <slide *ngFor="let slide of fullProject.slideShow">
-        <img src="{{ slide.slide }}" alt="image slide" style="display: block; width: 100%;">
-        <div class="carousel-caption">
-          <h5>{{ slide.imgTitle }}</h5>
-        </div>
-      </slide>
-    </carousel>
+<section id="project-background-container">
+  <div id="projectContainer">
+  
+    <h3>{{ fullProject.projTitle }}</h3>
+  
+    <div class="projectIcon">
+      <a href="{{fullProject.projURL}}" routerLink="/{{fullProject.routeURL}}" target="_blank"><img src="{{ fullProject.projIcon }}" alt=""></a>
+    </div>
+    <div class="projectEssay">
+      <p *ngFor="let essay of fullProject.projEssay">{{essay.projParagraph}}
+      </p>
+      <p class="url"><a href="{{fullProject.projURL}}" routerLink="/{{fullProject.routeURL}}" target="_blank" id="anchor-link">Click here</a> to view the project</p>
+      <p *ngIf="fullProject.gitURL != 'false'" class="git">Source code: <a class="fab fa-github" href="{{fullProject.gitURL}}" target="_blank" id="anchor-link"></a></p>
+    </div>
+  
+    <div id="projectSlideshow">
+      <carousel [noPause]="false">
+        <slide *ngFor="let slide of fullProject.slideShow">
+          <img src="{{ slide.slide }}" alt="image slide" style="display: block; width: 100%;">
+          <div class="carousel-caption">
+            <h5>{{ slide.imgTitle }}</h5>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  
   </div>
-
-</div>
+</section>

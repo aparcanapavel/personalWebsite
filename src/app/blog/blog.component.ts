@@ -19,9 +19,7 @@ export class BlogComponent implements OnInit {
 
   constructor(private route:ActivatedRoute, private _setHeaders : AppComponent, private _contactDataService: ConfigService) {
     // sets the header to the portfolio background
-    this._setHeaders.contactClick();
-    // sets the title to projects
-    this._setHeaders.pageTitle = "Blog";
+    this._setHeaders.contactClick()
   }
 
   ngOnInit() {
@@ -43,9 +41,6 @@ export class BlogComponent implements OnInit {
   SetOptionsData(data : any, id: any) {
     var article = data['blogs'];
     this.blog = article[id-1];
-    // var section = this.blog.sectionBreak;
-    // console.log(section);
-    // this.sectionBreak = section;
   }
 
 }

@@ -1,9 +1,10 @@
-#blogContainer
-{
-  border-left: 1px solid rgba(255,255,255,0.4);
-  border-right: 1px solid rgba(255,255,255,0.4);
+#blog-container-background{
+  width: 100%;
+  font-family: 'Heebo', sans-serif;
+}
+
+#blogContainer{
   padding: 0 20px;
-  background-color: #004266;
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 960px;

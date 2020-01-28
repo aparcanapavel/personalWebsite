@@ -1,13 +1,10 @@
-#contactContainer
-{
-  border-left: 1px solid rgba(255,255,255,0.4);
-  border-right: 1px solid rgba(255,255,255,0.4);
+#contactContainer{
   padding: 0 20px;
-  background-color: #004266;
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 960px;
   margin: 0 auto;
+  font-family: 'Heebo', sans-serif;
 }
 #myPicture
 {
@@ -28,6 +25,21 @@
   width: 100%;
   text-align: center;
 }
+
+.quick-contact-link{
+  color: #89B3D6;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.quick-contact-link:hover{
+  color: rgb(170, 193, 212);
+}
+
+.quick-contact-link:active{
+  color: rgb(107, 142, 170)
+}
+
 #contactLinks span
 {
   width: 50%;
@@ -45,10 +57,19 @@
   position: relative;
   width: 100%;
   padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Heebo', sans-serif;
+}
+
+#blog-background-cont{
+  width: 100%;
+  background-color: #607E96;
 }
 #blog h3
 {
   color: white;
+  font-weight: 700;
 }
 .blogPost
 {

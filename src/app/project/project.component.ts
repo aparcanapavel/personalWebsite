@@ -14,24 +14,25 @@ declare var $:any;
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
-  // interval for the slideshow
-  // myInterval = 5000;
   noPause = false;
   public fullProject = [];
 
   constructor(private route:ActivatedRoute, private _setHeaders : AppComponent, private _projectDataService: ConfigService) {
     // sets the header to the portfolio background
-    this._setHeaders.portfolioClick();
+    this._setHeaders.projectClick();
     // sets the title to projects
-    this._setHeaders.pageTitle = "Project";
  }
 
   ngOnInit() {
     // takes a snapshot from the URL
     let id = +this.route.snapshot.paramMap.get('id');
-    // console.log(id);
     this.getProjectById(id);
   }
+
+  scrollToProjects() {
+    this._setHeaders.scrollToProjects();
+  }
+  
   getProjectById(id)
   {
     // grab the data from the JSON

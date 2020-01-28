@@ -1,82 +1,184 @@
+<div id="banners" [ngSwitch]="banners">
+  <section class="welcome-header" *ngSwitchCase="'portfolioBanner'" [@bannerSwitch]>
+    <h3>Hello</h3>
+    <p>I am Pavel A. Aparcana</p>
+    <p>a Software Engineer</p>
+
+    <ul id="quickContact">
+      <li tooltip="LinkedIn" placement="bottom">
+        <a href="https://www.linkedin.com/in/pavel-aparcana" class="fab fa-linkedin" target="_blank"
+          title="LinkedIn"></a>
+      </li>
+      <li tooltip="Resume" placement="bottom">
+        <a href="assets/resume.pdf" class="fas fa-file-alt" target="_blank" rel="noopener noreferrer"
+          title="Resume"></a>
+      </li>
+      <li tooltip="GitHub" placement="bottom">
+        <a href="https://github.com/aparcanapavel" target="_blank" rel="noopener noreferrer" class="fab fa-github"
+          title="GitHub"></a>
+      </li>
+    </ul>
+
+    <div class="to-projects" (click)="scrollToProjects()">
+      <p>Projects</p>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <section class="welcome-header" *ngSwitchCase="'projectBanner'" [@bannerSwitch]>
+    <p>Pavel A. Aparcana</p>
+    <p>Software Engineer</p>
+
+    <ul id="quickContact">
+      <li tooltip="LinkedIn" placement="bottom">
+        <a href="https://www.linkedin.com/in/pavel-aparcana" class="fab fa-linkedin" target="_blank"
+          title="LinkedIn"></a>
+      </li>
+      <li tooltip="Resume" placement="bottom">
+        <a href="assets/resume.pdf" class="fas fa-file-alt" target="_blank" rel="noopener noreferrer"
+          title="Resume"></a>
+      </li>
+      <li tooltip="GitHub" placement="bottom">
+        <a href="https://github.com/aparcanapavel" target="_blank" rel="noopener noreferrer" class="fab fa-github"
+          title="GitHub"></a>
+      </li>
+    </ul>
+
+    <div class="to-projects" routerLink="/">
+      <p>Projects</p>
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </div>
+  </section>
+
+</div>
+
 <div id="portfolioContainer">
-  <div class="section">
-    <h3>Projects</h3>
+ 
+  <section id="projects-comp">
 
-    <div id="projects" *ngFor="let project of projects | reverse" routerLink="/portfolio/{{project.projID}}">
-      <div class="image">
-        <img src="{{ project.projIcon }}" alt="">
-      </div>
-      <div class="projectData">
-          <h5>{{ project.projTitle }}</h5>
-          <p> {{ project.projSummary }}</p>
-      </div>
-      <div id="dateArrow">
-        <p> {{ project.projDate }}</p>
-        <a class="fas fa-chevron-right"></a>
-      </div>
-    </div>
-    <hr id="projectLine">
-  </div>
-
-  <div id="XP" [ngSwitch]="xp">
-    <div id="xpSwitch">
-      <a id="skillsIcon" class="fas fa-list-ul" (click)="setXP('skills', $event)" tooltip="Skills and Certificates" placement="left"></a>
-      <a id="volIcon" class="fas fa-hands-helping" (click)="setXP('volunteer', $event)" tooltip="Volunteer Work" placement="right"></a>
-    </div>
-
-    <div id="skills-certs" *ngSwitchCase="'skills'" [@xpSwitch]>
-      <h3>Technical Skills</h3>
-      <div class="skillData">
-        <ul>
-          <li>JavaScript</li>
-          <li>GraphQL/Apollo</li>
-          <li>MongoDB</li>
-          <li>React.js</li>
-          <li>PostgreSQL</li>
-          <li>Ruby on Rails</li>
-          <li>Node.js</li>
-          <li>jQuery</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Amazon Web Services</li>
-          <li>Angular 7</li>
-          <li>p5.js</li>
-        </ul>
-      </div>
-      <div class="skillData">
-        <span class="fab fa-html5"></span>
-        <span class="fab fa-css3-alt"></span>
-        <span class="fab fa-js-square"></span>
-        <span class="fab fa-angular"></span>
-        <span class="fab fa-aws"></span>
-        <span class="fab fa-node-js"></span>
-        <span class="fab fa-react"></span>
-      </div>
-    </div>
-
-    <div class="volunteer" id="volunteer" *ngSwitchCase="'volunteer'" [@xpSwitch]>
-      <h3>Volunteer Work</h3>
-        <div class="volunteering">
-          <ul>
-            <li>Raised $1,500 for the Juvinile Diabetes Research Foundation October 2015 - Present</li>
-            <li>Helped Raise $912,143.47 for Rutgers Dance Marathon Spring 2016 and 2018</li>
-            <li>5 hours of Community Service per college semester</li>
-          </ul>
-
+    <div class="section" id="projects-list">
+      <h3 class="container-title">Projects</h3>
+  
+      <div id="projects" *ngFor="let project of projects | reverse" routerLink="/portfolio/{{project.projID}}" (click)="projectClicked()">
+        <div class="image">
+          <img src="{{ project.projIcon }}" alt="">
         </div>
-        <carousel id="vol">
-          <slide class="slidePic">
-            <img src="assets/portfolio/experience/jrdf2015.png" alt="first slide" style="display: block; width: 100%;">
-          </slide>
-          <slide class="slidePic">
-            <img src="assets/portfolio/experience/ftk2016.png" alt="second slide" style="display: block; width: 100%;">
-          </slide>
-          <slide class="slidePic">
-            <img src="assets/portfolio/experience/ftk2018.png" alt="third slide" style="display: block; width: 100%;">
-          </slide>
-        </carousel>
-
+        <h5>{{ project.projTitle }}</h5>
+        <div class="projectData">
+            <p> {{ project.projSummary }}</p>
+        </div>
+        <div id="dateArrow">
+          <p> {{ project.projDate }}</p>
+          <a class="fas fa-chevron-right"></a>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <section id="skills-vol">
+    <div id="XP" [ngSwitch]="xp">
+      <div id="xpSwitch">
+        <a id="skillsIcon" class="fas fa-list-ul" (click)="setXP('skills', $event)" tooltip="Technical Skills" placement="left"></a>
+        <a id="volIcon" class="fas fa-hands-helping" (click)="setXP('volunteer', $event)" tooltip="Volunteer Work" placement="right"></a>
+      </div>
+  
+      <div id="skills-certs" *ngSwitchCase="'skills'" [@xpSwitch]>
+        <h3 class="container-title">Technical Skills</h3>
+        <div class="skillData">
+          <ul class="skill-list">
+            <li>
+              <img src="../../assets/portfolio/skills/javascript.svg" alt="JavaScript">
+              <caption>JavaScript</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/graphql.svg" alt="GraphQL">
+              <caption>GraphQL</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/apollo.png" alt="Apollo Client">
+              <caption>Apollo Client</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/mongo.svg" alt="MongoDB">
+              <caption>MongoDB</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/react.svg" alt="ReactJS">
+              <caption>ReactJS</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/postgres.png" alt="PostgreSQL">
+              <caption>PostgreSQL</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/rails.svg" alt="Ruby on Rails">
+              <caption>Ruby on Rails</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/node.svg" alt="Node">
+              <caption>Node.js</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/jquery.svg" alt="jQuery">
+              <caption>jQuery</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/html.svg" alt="HTML5">
+              <caption>HTML5</caption>
+            </li>
+            <li>
+              <img src="../../assets/portfolio/skills/css.svg" alt="CSS3">
+              <caption>CSS3</caption>
+            </li>
+            <li>
+              <img src="../../assets//portfolio/skills/git.svg" alt="">
+              <caption>Git</caption>
+            </li>
+            <li class="last-row">
+              <img src="../../assets/portfolio/skills/aws.svg" alt="AWS">
+              <caption>Amazon Web Services</caption>
+            </li>
+            <li class="last-row">
+              <img src="../../assets/portfolio/skills/angular.svg" alt="Angular">
+              <caption>Angular 7</caption>
+            </li>
+            <li class="last-row">
+              <img src="../../assets/portfolio/skills/p5js.svg" alt="p5.js">
+              <caption>p5.js</caption>
+            </li>
+            <li class="last-row">
+              <img src="../../assets/portfolio/skills/adobe.svg" alt="p5.js">
+              <caption>Adobe Creative Cloud</caption>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <div class="volunteer" id="volunteer" *ngSwitchCase="'volunteer'" [@xpSwitch]>
+        <h3 class="container-title">Volunteer Work</h3>
+          <div class="volunteering">
+            <ul>
+              <li>Raised $1,500 for the Juvinile Diabetes Research Foundation October 2015 - Present</li>
+              <li>Helped Raise $912,143.47 for Rutgers Dance Marathon Spring 2016 and 2018</li>
+              <li>5 hours of Community Service per college semester</li>
+            </ul>
+  
+          </div>
+          <carousel id="vol">
+            <slide class="slidePic">
+              <img src="assets/portfolio/experience/jrdf2015.png" alt="first slide" style="display: block; width: 100%;">
+            </slide>
+            <slide class="slidePic">
+              <img src="assets/portfolio/experience/ftk2016.png" alt="second slide" style="display: block; width: 100%;">
+            </slide>
+            <slide class="slidePic">
+              <img src="assets/portfolio/experience/ftk2018.png" alt="third slide" style="display: block; width: 100%;">
+            </slide>
+          </carousel>
+  
+      </div>
+  
+    </div>
+  </section>
 </div>

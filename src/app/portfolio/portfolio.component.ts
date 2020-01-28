@@ -3,6 +3,7 @@ import { ConfigService } from 'src/app/config.service';
 import { AppComponent } from 'src/app/app.component';
 import { animate, state, style, transition, trigger, query, group } from '@angular/animations';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 declare var jquery:any;
 declare var $:any;
 
@@ -18,8 +19,24 @@ declare var $:any;
       ]),
       transition(':leave', [
         animate(0)
+      ])
+    ]),
+    trigger('bannerSwitch', [
+      transition(':enter', [
+        style({
+          opacity: '0',
+          height: '!'
+        }),
+        animate(100)
       ]),
-      // state('*', style({ backgroundColor: 'green' })),
+      transition(':leave', [
+        style({
+          opacity: '1',
+          position: 'absolute',
+          height: '!'
+        }),
+        animate(10)
+      ])
     ])
   ]
 })
@@ -28,10 +45,11 @@ export class PortfolioComponent implements OnInit {
   public projects = [];
   // switch for the skills and volunteer
   public xp = "";
-
-  constructor(private _setHeaders : AppComponent, private _portfolioDataService: ConfigService) {
+  public banners = ""
+  constructor(private _setHeaders: AppComponent, private _portfolioDataService: ConfigService, private router: Router) {
     // set page Title and page banner to Portfolio
     this._setHeaders.portfolioClick();
+    this.banners = "portfolioBanner";
   }
 
   ngOnInit() {
@@ -44,6 +62,14 @@ export class PortfolioComponent implements OnInit {
       $("#skillsIcon").addClass("active");
   }
 
+  scrollToProjects() {
+    this._setHeaders.scrollToProjects();
+  }
+
+  projectClicked(){
+    this.banners = "projectBanner";
+  }
+
   SetPortTitles(data : any) {
     // set portfolio data to portTitles
    this.projects = data['projects'];
@@ -54,7 +80,6 @@ export class PortfolioComponent implements OnInit {
     this.xp = xp;
     var target = e.target || e.srcElement || e.currentTarget;
     var targetID = target.id;
-    // console.log(targetID);
     $("#skillsIcon, #volIcon").removeClass("active");
     $("#"+targetID).addClass("active");
   }
